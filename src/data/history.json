@@ -1,0 +1,55 @@
+{
+  "timeline": [
+    {
+      "year": "c. 1200",
+      "title": "The Gamo Kingdoms",
+      "description": "The Gamo people establish a network of small, independent kingdoms across the highlands west of the Rift Valley, each with its own assembly of elders and distinct weaving traditions."
+    },
+    {
+      "year": "1894",
+      "title": "Imperial Integration",
+      "description": "Emperor Menelik II's forces reach the southern Rift Valley, incorporating the Gamo highlands into the Ethiopian Empire. Trade routes begin connecting the lowland lakes to highland markets."
+    },
+    {
+      "year": "1962",
+      "title": "Nech Sar Established",
+      "description": "Nech Sar National Park is formally gazetted, protecting the isthmus between Lakes Abaya and Chamo and preserving its unique ecosystem of white grasslands, acacia woodland, and groundwater forest."
+    },
+    {
+      "year": "1966",
+      "title": "The Modern City",
+      "description": "Arba Minch is officially chartered as a municipality, growing from a small settlement near the springs into a regional centre for education, agriculture, and trade."
+    },
+    {
+      "year": "2011",
+      "title": "Arba Minch University",
+      "description": "The university, founded in 2004, expands significantly, becoming one of southern Ethiopia's most important centres for water technology and engineering research."
+    },
+    {
+      "year": "Present",
+      "title": "Gateway to the South",
+      "description": "Arba Minch has emerged as southern Ethiopia's primary tourism gateway, connecting visitors to the Omo Valley, Konso's terraced landscapes, and the wider Rift Valley system."
+    }
+  ],
+  "culture": [
+    {
+      "id": "dorze-weavers",
+      "title": "The Dorze Weavers",
+      "description": "For generations, the Dorze have been regarded as Ethiopia's finest cotton weavers. Their hand-spun textiles\u2014characterized by tight, geometric patterns and a luminous sheen\u2014are sought after across the country. The craft is passed from parent to child, taught on wooden looms that have changed little in centuries. A single shema (traditional shawl) can take weeks of daily work to complete.",
+      "image": "/images/dorze-weaving.jpg"
+    },
+    {
+      "id": "crocodiles-fc",
+      "title": "Arba Minch Ketema FC",
+      "subtitle": "The Crocodiles",
+      "description": "Named for the Nile crocodiles of nearby Lake Chamo, Arba Minch Ketema FC represents the city in the Ethiopian Premier League. Match days transform the city\u2014the stadium fills with the sound of drums, the streets around it with the smell of roasting coffee. The club is a point of civic pride, a gathering place for a community spread across a wide and vertical landscape.",
+      "image": "/images/crocodiles-fc.jpg"
+    },
+    {
+      "id": "forty-springs-canopy",
+      "title": "The 40 Springs Forest Canopy",
+      "description": "Beneath the dense canopy of figs, junipers, and wild coffee trees, more than forty natural springs emerge from volcanic rock. The forest is both sacred and practical\u2014a water source, a place of meditation, and a habitat for Colobus monkeys and Silvery-cheeked hornbills. The recently constructed canopy walkway offers a perspective usually reserved for the birds.",
+      "image": "/images/canopy-walk.jpg"
+    }
+  ]
+}

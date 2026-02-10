@@ -1,0 +1,38 @@
+[
+  {
+    "id": "nech-sar",
+    "title": "Nech Sar National Park",
+    "subtitle": "The White Grass Plains",
+    "description": "Spanning the narrow isthmus between Lakes Abaya and Chamo, Nech Sar is named for its shimmering pale grasslands that glow silver under the midday sun. The park shelters Swayne's hartebeest, Grant's zebra, and more than 350 bird species within its 514 square kilometres of savannah, groundwater forest, and lakeside terrain.",
+    "caption": "06\u00b002\u2032N, 37\u00b035\u2032E \u2014 514 km\u00b2",
+    "image": "/images/nech-sar.jpg",
+    "aspect": "portrait"
+  },
+  {
+    "id": "crocodile-market",
+    "title": "The Crocodile Market",
+    "subtitle": "Lake Chamo\u2019s Living Shoreline",
+    "description": "At the eastern shore of Lake Chamo, Nile crocodiles\u2014some exceeding six metres\u2014gather in numbers unmatched anywhere else on the continent. Local Gamo fishermen navigate the same waters in papyrus tankwas, an ancient practice that predates written memory. The morning light here is extraordinary.",
+    "caption": "05\u00b052\u2032N, 37\u00b034\u2032E \u2014 Lake Chamo",
+    "image": "/images/crocodile-market.jpg",
+    "aspect": "landscape"
+  },
+  {
+    "id": "dorze-village",
+    "title": "Dorze Village",
+    "subtitle": "Weavers of the Highlands",
+    "description": "Perched at 2,600 metres on the Gughe Mountains, the Dorze people have perfected the art of cotton weaving over centuries. Their towering beehive-shaped houses, built entirely from bamboo and enset leaves, can stand for over 80 years. The village offers a rare window into living traditions untouched by the pace below.",
+    "caption": "06\u00b011\u2032N, 37\u00b034\u2032E \u2014 2,600m elevation",
+    "image": "/images/dorze-village.jpg",
+    "aspect": "portrait"
+  },
+  {
+    "id": "forty-springs",
+    "title": "The Forty Springs",
+    "subtitle": "Arba Minch\u2019s Namesake",
+    "description": "The city takes its Amharic name\u2014\u2018Forty Springs\u2019\u2014from the network of natural springs that bubble up through the dense groundwater forest at the base of the Rift Valley escarpment. Walking the canopy trail above the springs, the air turns cool and heavy with moisture, a stark contrast to the dry plateau above.",
+    "caption": "06\u00b002\u2032N, 37\u00b033\u2032E \u2014 Groundwater Forest",
+    "image": "/images/forty-springs.jpg",
+    "aspect": "landscape"
+  }
+]

@@ -1,0 +1,88 @@
+{
+  "services": [
+    {
+      "id": "paradise-lodge",
+      "name": "Paradise Lodge",
+      "category": "hotel",
+      "description": "Perched on the ridge between the two lakes with panoramic views of Nech Sar. The oldest and most established lodge in Arba Minch.",
+      "verified": true,
+      "location": "Sikela Hill"
+    },
+    {
+      "id": "haile-resort",
+      "name": "Haile Resort Arba Minch",
+      "category": "hotel",
+      "description": "Contemporary lakeside resort with manicured gardens descending toward Lake Chamo. Conference facilities and a modern restaurant.",
+      "verified": true,
+      "location": "Chamo Lakeside"
+    },
+    {
+      "id": "dorze-eco-lodge",
+      "name": "Dorze Lodge",
+      "category": "hotel",
+      "description": "Highland eco-lodge offering traditional Dorze bamboo huts with modern amenities. Cultural immersion at 2,600 metres.",
+      "verified": false,
+      "location": "Dorze Village"
+    },
+    {
+      "id": "rift-valley-guides",
+      "name": "Rift Valley Trekking",
+      "category": "guide",
+      "description": "Licensed guides specializing in multi-day treks through Nech Sar, the Dorze highlands, and the Omo Valley corridor.",
+      "verified": true,
+      "location": "Arba Minch Centre"
+    },
+    {
+      "id": "gamo-cultural-tours",
+      "name": "Gamo Cultural Encounters",
+      "category": "guide",
+      "description": "Community-led tours of Dorze weaving workshops, traditional markets, and homestead visits with Gamo families.",
+      "verified": true,
+      "location": "Various"
+    },
+    {
+      "id": "lake-boat-tours",
+      "name": "Chamo Boat Services",
+      "category": "guide",
+      "description": "Morning boat excursions to the Crocodile Market and hippo territories on Lake Chamo. Departures from Lante dock.",
+      "verified": false,
+      "location": "Lante, Lake Chamo"
+    },
+    {
+      "id": "selam-bus",
+      "name": "Selam Bus",
+      "category": "transport",
+      "description": "Reliable long-distance coach service connecting Arba Minch to Addis Ababa and Hawassa. Book in advance during peak season.",
+      "verified": true,
+      "location": "Main Bus Terminal"
+    },
+    {
+      "id": "minibus-network",
+      "name": "Local Minibus Network",
+      "category": "transport",
+      "description": "Frequent minibus connections between Sikela, Shecha, and surrounding towns including Chencha and Dorze.",
+      "verified": false,
+      "location": "City-wide"
+    }
+  ],
+  "events": [
+    {
+      "id": "meskel-festival",
+      "name": "Meskel Festival",
+      "date": "September",
+      "description": "The Finding of the True Cross celebrated with massive bonfires, processions, and communal feasting across the city."
+    },
+    {
+      "id": "timkat",
+      "name": "Timkat",
+      "date": "January",
+      "description": "Ethiopian Epiphany. Processions carry tabot replicas to the lakeside, accompanied by chanting, drumming, and communal baptism."
+    },
+    {
+      "id": "gamo-new-year",
+      "name": "Gamo New Year (Mesqela)",
+      "date": "September",
+      "description": "The Gamo people's own new year celebration, featuring traditional dances, bull-jumping ceremonies, and elder blessings."
+    }
+  ]
+}
