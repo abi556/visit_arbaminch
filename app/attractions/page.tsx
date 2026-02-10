@@ -102,11 +102,10 @@ export default function AttractionsPage() {
                 <button
                   key={cat.id}
                   onClick={() => setActiveCategory(cat.id)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all whitespace-nowrap ${
-                    activeCategory === cat.id
+                  className={`px-4 py-2 text-sm font-medium transition-all whitespace-nowrap ${activeCategory === cat.id
                       ? 'bg-forest text-paper'
                       : 'bg-muted text-ink hover:bg-muted/80'
-                  }`}
+                    }`}
                 >
                   {cat.label}
                 </button>
@@ -125,7 +124,7 @@ export default function AttractionsPage() {
               {idx % 2 === 0 ? (
                 <>
                   {/* Image on Left */}
-                  <div className="aspect-video md:aspect-square overflow-hidden rounded-lg">
+                  <div className="aspect-video md:aspect-square overflow-hidden">
                     <img
                       src={attr.image || "/placeholder.svg"}
                       alt={attr.title}
@@ -164,7 +163,7 @@ export default function AttractionsPage() {
                     </a>
                   </div>
                   {/* Image on Right */}
-                  <div className="aspect-video md:aspect-square overflow-hidden rounded-lg">
+                  <div className="aspect-video md:aspect-square overflow-hidden">
                     <img
                       src={attr.image || "/placeholder.svg"}
                       alt={attr.title}
