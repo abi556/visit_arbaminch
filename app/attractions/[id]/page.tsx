@@ -8,7 +8,7 @@ const attractionsData = {
   '1': {
     title: 'Nech Sar National Park',
     description: 'A pristine sanctuary bridging two lakes with diverse wildlife.',
-    image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1000&h=600&fit=crop',
+    image: '/images/attr1.jpg',
     details: 'Home to zebras, antelopes, and over 350 bird species, Nech Sar is one of Ethiopia\'s most scenic national parks. The park sits on a narrow isthmus between Lake Abaya and Lake Chamo.',
     fullContent: `Nech Sar National Park is a premier wildlife destination in southern Ethiopia. The name means "White Lake" in Amharic, referring to the stunning landscape. The park encompasses the narrow strip of land between two major lakes, creating a unique ecosystem.
 
@@ -21,7 +21,7 @@ Activities: Game drives, bird watching, boat tours`,
   '2': {
     title: 'Crocodile Market of Lake Chamo',
     description: 'Witness massive Nile crocodiles basking on the sandy shores.',
-    image: 'https://images.unsplash.com/photo-1574158622682-e40e69881006?w=1000&h=600&fit=crop',
+    image: '/images/attr5.jpg',
     details: 'One of the largest crocodile populations in Africa, Lake Chamo\'s crocodile market offers an unforgettable experience. Boat tours reveal the prehistoric reptiles in their natural habitat.',
     fullContent: `Lake Chamo hosts one of Africa's largest concentrations of Nile crocodiles. These ancient reptiles can grow up to 6 meters long and weigh over 1,000 kg. The crocodile market refers to the traditional hunting and trading grounds along the lakeshore.
 
@@ -34,7 +34,7 @@ What to bring: Sun protection, camera, binoculars`,
   '3': {
     title: 'Dorze Village & Weaving',
     description: 'Discover the traditional beehive houses and ancient weaving crafts.',
-    image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1000&h=600&fit=crop',
+    image: '/images/drz.jpg',
     details: 'The Dorze people are master weavers, known for their intricate cotton textiles. Visit their iconic beehive-shaped huts made from bamboo and enset (false banana) leaves.',
     fullContent: `The Dorze people live in the highlands surrounding Arba Minch and are renowned for their textile weaving traditions. Their distinctive beehive-shaped houses are architectural marvels, constructed entirely from natural materials.
 
@@ -52,7 +52,7 @@ Cultural sensitivity: Please ask permission before photographing people.`,
   '4': {
     title: 'Forty Springs (Arba Minch)',
     description: 'Natural springs flowing from volcanic rock through lush forest.',
-    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1000&h=600&fit=crop',
+    image: '/images/fty.jpg',
     details: 'The 40 Springs feed into the Omo River, creating a verdant oasis. The cool, clear waters provide relief and create beautiful natural pools.',
     fullContent: `The Arba Minch springs (arba means 40, minch means springs in the local Ari language) are natural water sources that emerge from underground volcanic springs. These springs create a microclimate of lush greenery in the otherwise arid landscape.
 
@@ -70,7 +70,7 @@ Facilities: Basic facilities available; bring your own supplies`,
   '5': {
     title: 'Lake Abaya',
     description: 'Ethiopia\'s largest lake with stunning sunset views.',
-    image: 'https://images.unsplash.com/photo-1511316695145-d0b9fbe0b65b?w=1000&h=600&fit=crop',
+    image: '/images/abay.jpg',
     details: 'The reddish-brown waters of Lake Abaya are home to hippopotamuses and numerous fish species. Sunset boat rides offer unforgettable vistas.',
     fullContent: `Lake Abaya is Ethiopia's largest lake, known for its distinctive reddish-brown coloration caused by volcanic sediment. The lake is home to a significant hippopotamus population and is an important freshwater fishery.
 
@@ -89,7 +89,7 @@ Tour operators: Available in Arba Minch town`,
   '6': {
     title: 'Arba Minch Crocodile Farm',
     description: 'Educational facility showcasing crocodile breeding and conservation.',
-    image: 'https://images.unsplash.com/photo-1555176326-21db5e0b25ca?w=1000&h=600&fit=crop',
+    image: '/images/ranch.jpg',
     details: 'Learn about crocodile biology and conservation efforts at this working farm. Support local education and wildlife protection initiatives.',
     fullContent: `The Arba Minch Crocodile Farm is an educational and conservation facility dedicated to breeding Nile crocodiles and promoting sustainable practices. The farm provides employment for local residents and educates visitors about crocodile biology and behavior.
 
@@ -129,7 +129,7 @@ export default function AttractionDetailPage() {
   return (
     <div className="min-h-screen bg-paper">
       {/* Hero Image */}
-      <div className="relative h-96 md:h-[500px] w-full overflow-hidden">
+      <div className="relative h-80 md:h-[400px] w-full overflow-hidden">
         <img
           src={attraction.image || "/placeholder.svg"}
           alt={attraction.title}

@@ -19,7 +19,7 @@ const attractions: Attraction[] = [
     title: 'Nech Sar National Park',
     category: 'parks',
     description: 'A pristine sanctuary bridging two lakes with diverse wildlife.',
-    image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1000&h=600&fit=crop',
+    image: '/images/attr1.jpg',
     details: 'Home to zebras, antelopes, and over 350 bird species, Nech Sar is one of Ethiopia\'s most scenic national parks. The park sits on a narrow isthmus between Lake Abaya and Lake Chamo.',
   },
   {
@@ -27,7 +27,7 @@ const attractions: Attraction[] = [
     title: 'Crocodile Market of Lake Chamo',
     category: 'nature',
     description: 'Witness massive Nile crocodiles basking on the sandy shores.',
-    image: 'https://images.unsplash.com/photo-1574158622682-e40e69881006?w=1000&h=600&fit=crop',
+    image: '/images/attr5.jpg',
     details: 'One of the largest crocodile populations in Africa, Lake Chamo\'s crocodile market offers an unforgettable experience. Boat tours reveal the prehistoric reptiles in their natural habitat.',
   },
   {
@@ -35,7 +35,7 @@ const attractions: Attraction[] = [
     title: 'Dorze Village & Weaving',
     category: 'culture',
     description: 'Discover the traditional beehive houses and ancient weaving crafts.',
-    image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1000&h=600&fit=crop',
+    image: '/images/drz.jpg',
     details: 'The Dorze people are master weavers, known for their intricate cotton textiles. Visit their iconic beehive-shaped huts made from bamboo and enset (false banana) leaves.',
   },
   {
@@ -43,7 +43,7 @@ const attractions: Attraction[] = [
     title: 'Forty Springs (Arba Minch)',
     category: 'nature',
     description: 'Natural springs flowing from volcanic rock through lush forest.',
-    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1000&h=600&fit=crop',
+    image: '/images/fty.jpg',
     details: 'The 40 Springs feed into the Omo River, creating a verdant oasis. The cool, clear waters provide relief and create beautiful natural pools.',
   },
   {
@@ -51,7 +51,7 @@ const attractions: Attraction[] = [
     title: 'Lake Abaya',
     category: 'nature',
     description: 'Ethiopia\'s largest lake with stunning sunset views.',
-    image: 'https://images.unsplash.com/photo-1511316695145-d0b9fbe0b65b?w=1000&h=600&fit=crop',
+    image: '/images/abay.jpg',
     details: 'The reddish-brown waters of Lake Abaya are home to hippopotamuses and numerous fish species. Sunset boat rides offer unforgettable vistas.',
   },
   {
@@ -59,7 +59,7 @@ const attractions: Attraction[] = [
     title: 'Arba Minch Crocodile Farm',
     category: 'culture',
     description: 'Educational facility showcasing crocodile breeding and conservation.',
-    image: 'https://images.unsplash.com/photo-1555176326-21db5e0b25ca?w=1000&h=600&fit=crop',
+    image: '/images/ranch.jpg',
     details: 'Learn about crocodile biology and conservation efforts at this working farm. Support local education and wildlife protection initiatives.',
   },
 ]
@@ -103,8 +103,8 @@ export default function AttractionsPage() {
                   key={cat.id}
                   onClick={() => setActiveCategory(cat.id)}
                   className={`px-4 py-2 text-sm font-medium transition-all whitespace-nowrap ${activeCategory === cat.id
-                      ? 'bg-forest text-paper'
-                      : 'bg-muted text-ink hover:bg-muted/80'
+                    ? 'bg-forest text-paper'
+                    : 'bg-muted text-ink hover:bg-muted/80'
                     }`}
                 >
                   {cat.label}
@@ -124,11 +124,11 @@ export default function AttractionsPage() {
               {idx % 2 === 0 ? (
                 <>
                   {/* Image on Left */}
-                  <div className="aspect-video md:aspect-square overflow-hidden">
+                  <div className="w-full">
                     <img
                       src={attr.image || "/placeholder.svg"}
                       alt={attr.title}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      className="w-full h-auto shadow-2xl"
                     />
                   </div>
                   {/* Text on Right */}
@@ -140,9 +140,10 @@ export default function AttractionsPage() {
                     <p className="text-lg text-ink leading-relaxed mb-6">{attr.details}</p>
                     <a
                       href={`/attractions/${attr.id}`}
-                      className="inline-block px-6 py-3 border-2 border-forest text-forest hover:bg-forest hover:text-paper transition-colors"
+                      className="group relative inline-block px-6 py-3 border-2 border-forest text-forest uppercase font-mono text-[10px] tracking-[0.2em] overflow-hidden transition-all duration-300"
                     >
-                      Learn More
+                      <span className="absolute inset-0 bg-forest origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-400 ease-out" />
+                      <span className="relative z-10 group-hover:text-paper transition-colors duration-300">Learn More</span>
                     </a>
                   </div>
                 </>
@@ -157,17 +158,18 @@ export default function AttractionsPage() {
                     <p className="text-lg text-ink leading-relaxed mb-6">{attr.details}</p>
                     <a
                       href={`/attractions/${attr.id}`}
-                      className="inline-block px-6 py-3 border-2 border-forest text-forest hover:bg-forest hover:text-paper transition-colors"
+                      className="group relative inline-block px-6 py-3 border-2 border-forest text-forest uppercase font-mono text-[10px] tracking-[0.2em] overflow-hidden transition-all duration-300"
                     >
-                      Learn More
+                      <span className="absolute inset-0 bg-forest origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-400 ease-out" />
+                      <span className="relative z-10 group-hover:text-paper transition-colors duration-300">Learn More</span>
                     </a>
                   </div>
                   {/* Image on Right */}
-                  <div className="aspect-video md:aspect-square overflow-hidden">
+                  <div className="w-full">
                     <img
                       src={attr.image || "/placeholder.svg"}
                       alt={attr.title}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      className="w-full h-auto shadow-2xl"
                     />
                   </div>
                 </>

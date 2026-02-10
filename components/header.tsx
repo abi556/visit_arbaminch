@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X, Globe } from 'lucide-react'
+import { usePathname } from 'next/navigation'
 
 const menuItems = [
   {
@@ -22,11 +23,15 @@ const menuItems = [
       { label: 'Services', href: '/services' },
       { label: 'Events', href: '/events' },
       { label: 'Travel Requirements', href: '/travel-requirements' },
+      { label: 'Direct Flights', href: '/direct-flights' },
+      { label: 'Stopover', href: '/stopover' },
     ],
   },
 ]
 
 export function Header() {
+  const pathname = usePathname()
+  const isHomePage = pathname === '/'
   const [mobileOpen, setMobileOpen] = useState(false)
   const [expandedMobile, setExpandedMobile] = useState<string | null>(null)
   const [weather, setWeather] = useState('25°C Partly Cloudy')
@@ -41,8 +46,8 @@ export function Header() {
   }, [mobileOpen])
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50">
-      <div className="border-b border-paper/10 bg-lakeBlue/20 backdrop-blur-md">
+    <header className={`${isHomePage ? 'absolute' : 'sticky top-0'} left-0 right-0 z-50`}>
+      <div className={`border-b border-paper/10 ${isHomePage ? 'bg-lakeBlue/20 backdrop-blur-md' : 'bg-forest'}`}>
         <div className="mx-auto max-w-full px-6 md:px-12">
           <div className="flex items-center justify-between py-4">
             {/* Left side: Logo + Primary Menu */}
@@ -166,54 +171,7 @@ export function Header() {
             ))}
           </div>
 
-          {/* Bottom CTA and Socials */}
-          <div className="border-t border-muted p-4 space-y-4">
-            <div className="grid grid-cols-2 gap-2">
-              <Link
-                href="/direct-flights"
-                className="px-4 py-2 text-sm border border-forest text-forest hover:bg-forest hover:text-paper transition-colors text-center"
-                onClick={() => setMobileOpen(false)}
-              >
-                Direct Flights
-              </Link>
-              <Link
-                href="/stopover"
-                className="px-4 py-2 text-sm border border-forest text-forest hover:bg-forest hover:text-paper transition-colors text-center"
-                onClick={() => setMobileOpen(false)}
-              >
-                Stopover
-              </Link>
-            </div>
-            <div className="flex items-center justify-center gap-4 pt-4">
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-ink hover:text-forest transition-colors"
-                aria-label="Instagram"
-              >
-                IG
-              </a>
-              <a
-                href="https://youtube.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-ink hover:text-forest transition-colors"
-                aria-label="YouTube"
-              >
-                YT
-              </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-ink hover:text-forest transition-colors"
-                aria-label="Facebook"
-              >
-                FB
-              </a>
-            </div>
-          </div>
+
         </div>
       )}
     </header>
