@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { MapPin, Clock, Zap } from 'lucide-react'
 
 export default function StopoverPage() {
@@ -31,10 +32,22 @@ export default function StopoverPage() {
   return (
     <div className="min-h-screen bg-paper">
       {/* Hero Section */}
-      <section className="relative py-20 px-4 bg-forest text-paper">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-serif mb-4">Stopover Opportunities</h1>
-          <p className="text-lg md:text-xl text-paper/80">
+      <section className="relative py-20 px-4 text-paper overflow-hidden">
+        {/* Background Image Overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/flight.jpg"
+            alt="Stopover Opportunities"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-ink/50" />
+        </div>
+
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-6xl font-serif mb-6 text-paper">Stopover Opportunities</h1>
+          <p className="text-xs md:text-sm font-mono font-bold text-paper max-w-2xl leading-relaxed uppercase tracking-[0.2em]">
             Extend your journey through Ethiopia before reaching Arba Minch.
           </p>
         </div>
@@ -44,7 +57,7 @@ export default function StopoverPage() {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-serif text-ink mb-12">Popular Stopover Destinations</h2>
-          
+
           <div className="grid gap-8">
             {stopovers.map((stopover) => (
               <div
@@ -60,9 +73,9 @@ export default function StopoverPage() {
                     </p>
                   </div>
                 </div>
-                
+
                 <p className="text-ink mb-6">{stopover.description}</p>
-                
+
                 <div className="mb-6">
                   <p className="font-semibold text-ink mb-3">Top Highlights:</p>
                   <ul className="grid grid-cols-2 gap-2">

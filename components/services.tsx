@@ -1,6 +1,6 @@
 "use client"
 
-import { Hotel, Compass, Bus, Calendar } from "lucide-react"
+import { Hotel, Compass, Bus, Calendar, BadgeCheck } from "lucide-react"
 import servicesData from "@/src/data/services.json"
 import { useEffect, useRef, useState } from "react"
 
@@ -16,19 +16,17 @@ const categoryLabels: Record<string, string> = {
   transport: "Transport",
 }
 
-function VerifiedGlyph() {
+function VerifiedBadge() {
   return (
-    <svg
-      width="14"
-      height="14"
-      viewBox="0 0 14 14"
-      fill="none"
-      className="inline-block"
-      aria-label="Verified listing"
-    >
-      <circle cx="7" cy="7" r="6" stroke="currentColor" strokeWidth="0.75" />
-      <circle cx="7" cy="7" r="1.5" fill="currentColor" />
-    </svg>
+    <div className="text-[#0095f6] flex items-center">
+      <svg
+        viewBox="0 0 24 24"
+        className="w-4 h-4 fill-current"
+        aria-label="Verified account"
+      >
+        <path d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.97-.81-4.01s-2.62-1.27-4.01-.81C14.67 2.53 13.43 1.65 12 1.65s-2.67.88-3.34 2.19c-1.39-.46-2.97-.2-4.01.81s-1.27 2.62-.81 4.01C2.53 9.33 1.65 10.57 1.65 12s.88 2.67 2.19 3.34c-.46 1.39-.2 2.97.81 4.01s2.62 1.27 4.01.81c.67 1.31 1.91 2.19 3.34 2.19s2.67-.88 3.34-2.19c1.39.46 2.97.2 4.01-.81s1.27-2.62.81-4.01c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.35-6.2 6.78z" />
+      </svg>
+    </div>
   )
 }
 
@@ -66,9 +64,8 @@ function ServiceItem({
   return (
     <div
       ref={ref}
-      className={`group border-b border-ink/8 py-6 transition-all duration-700 ease-out lg:py-8 ${
-        isVisible ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
-      }`}
+      className={`group border-b border-ink/8 py-6 transition-all duration-700 ease-out lg:py-8 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
+        }`}
       style={{ transitionDelay: `${index * 60}ms` }}
     >
       <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:gap-12">
@@ -80,13 +77,11 @@ function ServiceItem({
             className="flex-shrink-0 text-ink/30"
           />
           <div className="flex items-center gap-3">
-            <h4 className="font-serif text-xl font-light text-ink transition-colors duration-300 group-hover:text-clay lg:text-2xl">
+            <h4 className="font-serif text-xl font-light text-ink transition-colors duration-300 group-hover:text-forest lg:text-2xl">
               {service.name}
             </h4>
             {service.verified && (
-              <span className="text-forest">
-                <VerifiedGlyph />
-              </span>
+              <VerifiedBadge />
             )}
           </div>
         </div>
@@ -123,10 +118,8 @@ export function Services() {
           </h2>
         </div>
         <div className="flex items-center gap-2">
-          <span className="text-forest">
-            <VerifiedGlyph />
-          </span>
-          <span className="font-mono text-[10px] tracking-wider text-ink/40 uppercase">
+          <VerifiedBadge />
+          <span className="font-mono text-[10px] tracking-wider text-[#0095f6] font-bold uppercase">
             Verified listing
           </span>
         </div>
@@ -168,9 +161,9 @@ export function Services() {
                 <Calendar
                   size={16}
                   strokeWidth={1}
-                  className="text-clay"
+                  className="text-forest"
                 />
-                <span className="font-mono text-xs tracking-wider text-clay">
+                <span className="font-mono text-xs tracking-wider text-forest">
                   {event.date}
                 </span>
               </div>

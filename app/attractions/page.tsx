@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Filter } from 'lucide-react'
 
 interface Attraction {
@@ -62,6 +63,30 @@ const attractions: Attraction[] = [
     image: '/images/ranch.jpg',
     details: 'Learn about crocodile biology and conservation efforts at this working farm. Support local education and wildlife protection initiatives.',
   },
+  {
+    id: 7,
+    title: 'Mount Gughe',
+    category: 'nature',
+    description: 'The highest point in the Gamo Highlands and 4th highest place in Ethiopia.',
+    image: '/images/guge.jpg',
+    details: 'Rising to over 4,200 metres, Mount Gughe stands as the fourth highest point in Ethiopia and one of the most prominent summits in Africa. The mountain dominates the landscape, offering breathtaking panoramic views of the Rift Valley lakes.',
+  },
+  {
+    id: 8,
+    title: 'Yo Maskala',
+    category: 'culture',
+    description: 'The vibrant yearly festival of the Gamo people.',
+    image: '/images/yom.jpg',
+    details: 'Yo Maskala is the most vibrant and culturally significant festival of the Gamo people, marking their traditional New Year. The celebration involves rhythmic songs, traditional dances, and the lighting of the Demera bonfire.',
+  },
+  {
+    id: 9,
+    title: 'Maze National Park',
+    category: 'parks',
+    description: 'A vital sanctuary for the endemic Swayne\'s Hartebeest.',
+    image: '/images/maze.jpg',
+    details: 'Maze National Park is a 210-square-kilometer wildlife haven named after the Maze River. It is famous for hosting one of the last remaining populations of the endangered Swayne\'s Hartebeest and the mysterious Wonja Stone Caves.',
+  },
 ]
 
 const categories = [
@@ -72,22 +97,32 @@ const categories = [
 ]
 
 export default function AttractionsPage() {
-  const [activeCategory, setActiveCategory] = useState('all')
+  const [activeCategory, setActiveCategory] = useState<'all' | 'nature' | 'culture' | 'parks'>('all')
 
   const filteredAttractions = attractions.filter(
     (attr) => activeCategory === 'all' || attr.category === activeCategory
   )
 
   return (
-    <>
-      {/* Page Header */}
-      <section className="py-12 md:py-16 px-4 bg-muted/10">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-serif text-ink mb-4">
-            Attractions
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl">
-            Explore the natural wonders and cultural treasures of Arba Minch
+    <div className="min-h-screen bg-paper">
+      {/* Hero Section */}
+      <section className="relative py-20 px-4 text-paper overflow-hidden">
+        {/* Background Image Overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/attrC.jpg"
+            alt="Attractions in Arba Minch"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-ink/50" />
+        </div>
+
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-6xl font-serif mb-6 text-paper">Attractions</h1>
+          <p className="text-xs md:text-sm font-mono font-bold text-paper max-w-2xl leading-relaxed uppercase tracking-[0.2em]">
+            Explore the natural wonders and cultural treasures of Arba Minch.
           </p>
         </div>
       </section>
@@ -101,7 +136,7 @@ export default function AttractionsPage() {
               {categories.map((cat) => (
                 <button
                   key={cat.id}
-                  onClick={() => setActiveCategory(cat.id)}
+                  onClick={() => setActiveCategory(cat.id as 'all' | 'nature' | 'culture' | 'parks')}
                   className={`px-4 py-2 text-sm font-medium transition-all whitespace-nowrap ${activeCategory === cat.id
                     ? 'bg-forest text-paper'
                     : 'bg-muted text-ink hover:bg-muted/80'
@@ -178,6 +213,14 @@ export default function AttractionsPage() {
           ))}
         </div>
       </section>
-    </>
+      {/* Back Link */}
+      <section className="py-12 px-4 border-t border-muted">
+        <div className="max-w-4xl mx-auto">
+          <Link href="/" className="inline-flex items-center gap-2 text-forest font-medium hover:text-forest/80 transition-colors">
+            ← Back to Home
+          </Link>
+        </div>
+      </section>
+    </div>
   )
 }

@@ -1,4 +1,6 @@
 import { Calendar } from 'lucide-react'
+import Link from 'next/link'
+import Image from 'next/image'
 
 interface Event {
   id: number
@@ -75,22 +77,32 @@ export default function EventsPage() {
   const upcomingEvents = events.filter((e) => !e.featured)
 
   return (
-    <>
-      {/* Page Header */}
-      <section className="py-12 md:py-16 px-4 bg-muted/10">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-serif text-ink mb-4">
-            Events & Celebrations
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl">
-            Experience the vibrant festivals and cultural celebrations of Arba Minch
+    <div className="min-h-screen bg-paper">
+      {/* Hero Section */}
+      <section className="relative py-20 px-4 text-paper overflow-hidden">
+        {/* Background Image Overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/evn.jpg"
+            alt="Events in Arba Minch"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-ink/50" />
+        </div>
+
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-6xl font-serif mb-6 text-paper">Events & Celebrations</h1>
+          <p className="text-xs md:text-sm font-mono font-bold text-paper max-w-2xl leading-relaxed uppercase tracking-[0.2em]">
+            Experience the vibrant festivals and cultural celebrations of Arba Minch.
           </p>
         </div>
       </section>
 
       {/* Featured Event */}
       {featuredEvent && (
-        <section className="px-4 py-16 md:py-24 bg-clay text-paper">
+        <section className="px-4 py-16 md:py-24 bg-forest text-paper">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8 items-start">
               {/* Date Block */}
@@ -111,7 +123,7 @@ export default function EventsPage() {
                 </div>
                 <a
                   href="#"
-                  className="inline-block px-6 py-3 bg-paper text-clay font-medium hover:bg-muted transition-colors"
+                  className="inline-block px-6 py-3 bg-paper text-forest font-medium hover:bg-muted transition-colors"
                 >
                   Learn More
                 </a>
@@ -131,7 +143,7 @@ export default function EventsPage() {
               <article key={event.id} className="grid md:grid-cols-4 gap-6 md:gap-8 p-8 bg-muted/30 hover:bg-muted/50 transition-colors rounded-lg border border-muted items-start">
                 {/* Date Block */}
                 <div className="bg-paper border border-muted p-6 rounded-lg text-center md:col-span-1">
-                  <p className="text-3xl font-serif font-bold text-clay mb-1">{event.day.split('-')[0]}</p>
+                  <p className="text-3xl font-serif font-bold text-forest mb-1">{event.day.split('-')[0]}</p>
                   <p className="text-xs uppercase tracking-wider text-muted-foreground">{event.month}</p>
                 </div>
 
@@ -171,19 +183,19 @@ export default function EventsPage() {
               <h3 className="text-2xl font-serif text-ink mb-6">Event Tips</h3>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex gap-3">
-                  <span className="text-clay font-bold">•</span>
+                  <span className="text-forest font-bold">•</span>
                   <span>Arrive early for large events to secure good viewing spots</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-clay font-bold">•</span>
+                  <span className="text-forest font-bold">•</span>
                   <span>Respect cultural practices and dress appropriately</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-clay font-bold">•</span>
+                  <span className="text-forest font-bold">•</span>
                   <span>Book accommodations well in advance during festival season</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-clay font-bold">•</span>
+                  <span className="text-forest font-bold">•</span>
                   <span>Hire a local guide to understand the cultural significance</span>
                 </li>
               </ul>
@@ -191,6 +203,15 @@ export default function EventsPage() {
           </div>
         </div>
       </section>
-    </>
+
+      {/* Back Link */}
+      <section className="py-12 px-4 border-t border-muted">
+        <div className="max-w-4xl mx-auto">
+          <Link href="/" className="inline-flex items-center gap-2 text-forest font-medium hover:text-forest/80 transition-colors">
+            ← Back to Home
+          </Link>
+        </div>
+      </section>
+    </div>
   )
 }

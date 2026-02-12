@@ -1,55 +1,69 @@
 {
   "timeline": [
     {
-      "year": "c. 1200",
-      "title": "The Gamo Kingdoms",
-      "description": "The Gamo people establish a network of small, independent kingdoms across the highlands west of the Rift Valley, each with its own assembly of elders and distinct weaving traditions."
+      "year": "c. 10,000 BCE",
+      "title": "Ancient Highland Heritage",
+      "description": "The Gamo Highlands trace their roots back approximately 10,000 years, where early inhabitants developed advanced terracing and agroforestry systems that sustained high-altitude agriculture for millennia."
     },
     {
-      "year": "1894",
-      "title": "Imperial Integration",
-      "description": "Emperor Menelik II's forces reach the southern Rift Valley, incorporating the Gamo highlands into the Ethiopian Empire. Trade routes begin connecting the lowland lakes to highland markets."
+      "year": "c. 200 BCE",
+      "title": "Lakeside Settlements",
+      "description": "Evidence from archaeological surveys indicates that early communities began settling around the fertile shores of Lake Abaya and Lake Chamo, utilizing the abundance of water and fish."
+    },
+    {
+      "year": "c. 1300 CE",
+      "title": "Rise of the Gamo Kingdoms",
+      "description": "The Gamo people established a sophisticated system of kingdoms and chieftaincies in the highlands surrounding modern-day Arba Minch. Their democratic assemblies ('Dulata') and unique cultural traditions laid the foundation for the region's identity."
+    },
+    {
+      "year": "16th Century",
+      "title": "Highland Resilience",
+      "description": "During the period of the Ahmed Gragn invasion and the subsequent Oromo migrations, the Gamo Highlands served as a vital refuge. The rugged terrain and strong social organization allowed communities to preserve their traditions while integrating new cultural influences."
     },
     {
       "year": "1962",
-      "title": "Nech Sar Established",
-      "description": "Nech Sar National Park is formally gazetted, protecting the isthmus between Lakes Abaya and Chamo and preserving its unique ecosystem of white grasslands, acacia woodland, and groundwater forest."
+      "title": "Modern City Foundation",
+      "description": "Arba Minch, meaning 'Forty Springs', was officially established as the administrative center of the Gamo-Gofa province, replacing Chencha due to its strategic location and plentiful water sources."
     },
     {
-      "year": "1966",
-      "title": "The Modern City",
-      "description": "Arba Minch is officially chartered as a municipality, growing from a small settlement near the springs into a regional centre for education, agriculture, and trade."
+      "year": "1974",
+      "title": "Nech Sar National Park",
+      "description": "The park was formally gazetted to protect the 'Bridge of God' isthmus and its unique wildlife, including the white grass plains that give the park its name."
     },
     {
-      "year": "2011",
+      "year": "1986",
       "title": "Arba Minch University",
-      "description": "The university, founded in 2004, expands significantly, becoming one of southern Ethiopia's most important centres for water technology and engineering research."
+      "description": "Founded as the Arba Minch Water Technology Institute, it established the city as a center for higher education and specialized research in water resources and engineering."
+    },
+    {
+      "year": "2005",
+      "title": "Maze National Park",
+      "description": "Established to protect the endangered Swayne's Hartebeest, this park added to the region's status as a critical biodiversity hotspot in the Rift Valley."
     },
     {
       "year": "Present",
-      "title": "Gateway to the South",
-      "description": "Arba Minch has emerged as southern Ethiopia's primary tourism gateway, connecting visitors to the Omo Valley, Konso's terraced landscapes, and the wider Rift Valley system."
+      "title": "Tourism Renaissance",
+      "description": "Arba Minch has emerged as one of Ethiopia's premier ecotourism destinations. Improved infrastructure, new lodges, and growing international awareness have made the city a gateway to the Omo Valley and the lakes of the Rift Valley."
     }
   ],
   "culture": [
     {
-      "id": "dorze-weavers",
-      "title": "The Dorze Weavers",
-      "description": "For generations, the Dorze have been regarded as Ethiopia's finest cotton weavers. Their hand-spun textiles\u2014characterized by tight, geometric patterns and a luminous sheen\u2014are sought after across the country. The craft is passed from parent to child, taught on wooden looms that have changed little in centuries. A single shema (traditional shawl) can take weeks of daily work to complete.",
-      "image": "/images/dorze-weaving.jpg"
+      "id": "dorze-architecture",
+      "title": "Masters of Highland Architecture",
+      "description": "The Dorze are master architects whose iconic beehive-shaped huts are constructed from bamboo and enset (false banana) leaves, reaching heights of up to 12 meters. A unique feature of these structures is their portability; as termites eat the base, the entire house can be lifted and moved, progressively becoming shorter over its 80-year lifespan. They are also Ethiopia's most celebrated weavers, with a 'learning-by-doing' tradition passed down through generations.",
+      "image": "/images/his5.jpg"
     },
     {
-      "id": "crocodiles-fc",
-      "title": "Arba Minch Ketema FC",
-      "subtitle": "The Crocodiles",
-      "description": "Named for the Nile crocodiles of nearby Lake Chamo, Arba Minch Ketema FC represents the city in the Ethiopian Premier League. Match days transform the city\u2014the stadium fills with the sound of drums, the streets around it with the smell of roasting coffee. The club is a point of civic pride, a gathering place for a community spread across a wide and vertical landscape.",
-      "image": "/images/crocodiles-fc.jpg"
+      "id": "indigenous-democracy",
+      "title": "Gamo Indigenous Democracy",
+      "description": "The Gamo people practice a sophisticated form of indigenous democracy anchored by the 'Woga' (traditional law) and governed through 'Dulata' (assemblies). These assemblies take place in 'Dubusha'—sacred public spaces or meadows that serve as forums for conflict resolution and social dialogue, emphasizing group solidarity and environmental stewardship through strictly enforced taboos.",
+      "image": "/images/his2.jpg"
     },
     {
-      "id": "forty-springs-canopy",
-      "title": "The 40 Springs Forest Canopy",
-      "description": "Beneath the dense canopy of figs, junipers, and wild coffee trees, more than forty natural springs emerge from volcanic rock. The forest is both sacred and practical\u2014a water source, a place of meditation, and a habitat for Colobus monkeys and Silvery-cheeked hornbills. The recently constructed canopy walkway offers a perspective usually reserved for the birds.",
-      "image": "/images/canopy-walk.jpg"
+      "id": "yo-maskala",
+      "title": "Yo Maskala: The Gamo New Year",
+      "description": "Yo Maskala is the most significant yearly festival for the Gamo people, marking their traditional New Year and the celebration of the True Cross. It is a time for reconciliation and cultural renewal, characterized by rhythmic 'Yo' chanting, traditional dances, and the lighting of the 'Demera' bonfire, with participants dressed in their finest hand-woven Gamo textiles.",
+      "image": "/images/yom.jpg"
     }
   ]
 }

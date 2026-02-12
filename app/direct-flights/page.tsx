@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 
 export default function DirectFlightsPage() {
@@ -22,10 +23,22 @@ export default function DirectFlightsPage() {
   return (
     <div className="min-h-screen bg-paper">
       {/* Hero Section */}
-      <section className="relative py-20 px-4 bg-lakeBlue text-paper">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-serif mb-4">Direct Flights to Arba Minch</h1>
-          <p className="text-lg md:text-xl text-paper/80">
+      <section className="relative py-20 px-4 text-paper overflow-hidden">
+        {/* Background Image Overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/flight.jpg"
+            alt="Direct Flights to Arba Minch"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-ink/50" />
+        </div>
+
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-6xl font-serif mb-6 text-paper">Direct Flights to Arba Minch</h1>
+          <p className="text-xs md:text-sm font-mono font-bold text-paper max-w-2xl leading-relaxed uppercase tracking-[0.2em]">
             Convenient connections from around the world. Start your Rift Valley adventure.
           </p>
         </div>
@@ -35,7 +48,7 @@ export default function DirectFlightsPage() {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-serif text-ink mb-12">Recommended Airlines</h2>
-          
+
           <div className="grid gap-8">
             {airlines.map((airline) => (
               <div
@@ -55,7 +68,7 @@ export default function DirectFlightsPage() {
                   </div>
                   <span className="text-4xl">{airline.logo}</span>
                 </div>
-                
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {airline.features.map((feature) => (
                     <span

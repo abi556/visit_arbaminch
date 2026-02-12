@@ -1,16 +1,29 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { CheckCircle, AlertCircle } from 'lucide-react'
 
 export default function TravelRequirementsPage() {
   return (
     <div className="min-h-screen bg-paper">
       {/* Hero Section */}
-      <section className="relative py-20 px-4 bg-lakeBlue text-paper">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-serif mb-4">Travel Requirements</h1>
-          <p className="text-lg md:text-xl text-paper/80">
+      <section className="relative py-20 px-4 text-paper overflow-hidden">
+        {/* Background Image Overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/req.jpg"
+            alt="Travel Requirements for Arba Minch"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-ink/50" />
+        </div>
+
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-6xl font-serif mb-6 text-paper">Travel Requirements</h1>
+          <p className="text-xs md:text-sm font-mono font-bold text-paper max-w-2xl leading-relaxed uppercase tracking-[0.2em]">
             Everything you need to know before visiting Arba Minch.
           </p>
         </div>

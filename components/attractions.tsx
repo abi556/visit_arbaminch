@@ -34,17 +34,15 @@ function AttractionBlock({
   return (
     <article
       ref={ref}
-      className={`flex flex-col gap-8 transition-all duration-1000 ease-out lg:flex-row lg:gap-16 xl:gap-24 ${
-        isEven ? "" : "lg:flex-row-reverse"
-      } ${isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"}`}
+      className={`flex flex-col gap-8 transition-all duration-1000 ease-out lg:flex-row lg:gap-16 xl:gap-24 ${isEven ? "" : "lg:flex-row-reverse"
+        } ${isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"}`}
     >
       {/* Image */}
       <div
-        className={`relative overflow-hidden ${
-          isPortrait
-            ? "aspect-[4/5] w-full lg:w-[45%]"
-            : "aspect-[16/10] w-full lg:w-[55%]"
-        }`}
+        className={`relative overflow-hidden ${isPortrait
+          ? "aspect-[4/5] w-full lg:w-[45%]"
+          : "aspect-[16/10] w-full lg:w-[55%]"
+          }`}
       >
         <Image
           src={attraction.image || "/placeholder.svg"}
@@ -57,9 +55,8 @@ function AttractionBlock({
 
       {/* Text Block - offset vertically */}
       <div
-        className={`flex flex-col justify-center lg:w-[40%] ${
-          isEven ? "lg:pt-20" : "lg:pt-12"
-        }`}
+        className={`flex flex-col justify-center lg:w-[40%] ${isEven ? "lg:pt-20" : "lg:pt-12"
+          }`}
       >
         <span className="font-mono text-[10px] tracking-[0.3em] text-clay uppercase">
           {attraction.caption}
@@ -97,7 +94,7 @@ export function Attractions() {
           <em className="italic">tells the story.</em>
         </h2>
         <p className="mt-6 max-w-lg font-sans text-base font-light leading-relaxed text-ink/60">
-          Four encounters that define Arba Minch. Each carries the weight of geology, tradition, and the patient work of water on stone.
+          Seven encounters that define Arba Minch. Each carries the weight of geology, tradition, and the patient work of water on stone.
         </p>
       </div>
 

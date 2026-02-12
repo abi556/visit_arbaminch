@@ -37,9 +37,8 @@ function TimelineItem({
   return (
     <div
       ref={ref}
-      className={`relative flex gap-8 transition-all duration-700 ease-out lg:gap-12 ${
-        isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-      }`}
+      className={`relative flex gap-8 transition-all duration-700 ease-out lg:gap-12 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+        }`}
       style={{ transitionDelay: `${index * 100}ms` }}
     >
       {/* Timeline Line & Dot */}
@@ -77,9 +76,8 @@ function CultureArticle({
   return (
     <article
       ref={ref}
-      className={`flex flex-col gap-8 transition-all duration-1000 ease-out lg:flex-row lg:gap-16 ${
-        isEven ? "" : "lg:flex-row-reverse"
-      } ${isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"}`}
+      className={`flex flex-col gap-8 transition-all duration-1000 ease-out lg:flex-row lg:gap-16 ${isEven ? "" : "lg:flex-row-reverse"
+        } ${isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"}`}
     >
       {/* Image */}
       <div className="relative aspect-[4/3] w-full overflow-hidden lg:w-1/2">

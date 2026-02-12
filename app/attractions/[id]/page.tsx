@@ -106,6 +106,66 @@ Entry fee: Modest fee supports conservation efforts
 Tour duration: 1-2 hours
 Best time: Year-round`,
   },
+  '7': {
+    title: 'Mount Gughe',
+    description: 'The highest point in the Gamo Highlands and 4th highest place in Ethiopia.',
+    image: '/images/guge.jpg',
+    details: 'Rising to over 4,200 metres, Mount Gughe stands as the fourth highest point in Ethiopia and one of the most prominent summits in Africa. The mountain dominates the landscape, offering breathtaking panoramic views of the Rift Valley lakes.',
+    fullContent: `Mount Gughe is the crown jewel of the Gamo Highlands, rising to an elevation of approximately 4,200 metres above sea level. It is recognized as the fourth highest peak in Ethiopia and offers some of the most spectacular alpine scenery in East Africa.
+
+The mountain is characterized by its mist-covered peaks, ancient terraced slopes, and unique afro-alpine vegetation. The surrounding Gamo people have developed a sophisticated agricultural system that has sustained them for centuries in these high altitudes.
+
+Highlights:
+- Breathtaking panoramic views of Lakes Abaya and Chamo
+- Ancient terraced farming landscapes
+- Unique afro-alpine flora and fauna
+- Cool highland climate
+- Cultural encounters with the Gamo people
+
+Best time to visit: November to February (clear views)
+Trekking difficulty: Moderate to challenging
+What to bring: Warm clothing, sturdy hiking boots, water, and sun protection`,
+  },
+  '8': {
+    title: 'Yo Maskala',
+    description: 'The vibrant yearly festival of the Gamo people.',
+    image: '/images/yom.jpg',
+    details: 'Yo Maskala is the most vibrant and culturally significant festival of the Gamo people, marking their traditional New Year. The celebration involves rhythmic songs, traditional dances, and the lighting of the Demera bonfire.',
+    fullContent: `Yo Maskala is the most important cultural and religious festival for the Gamo people of Arba Minch and the surrounding highlands. It marks the Gamo New Year and coincides with the Ethiopian celebration of Meskel, commemorating the discovery of the True Cross.
+
+The festival is a magnificent display of Gamo heritage, featuring the iconic 'Yo' songs and dances. Families gather to celebrate reconciliation, community, and the promise of a new year. The centerpiece of the event is the lighting of the Demera, a massive bonfire that symbolizes the light of faith and community.
+
+Festival Highlights:
+- Traditional 'Yo' chanting and dancing
+- Lighting of the ceremonial Demera bonfire
+- Vibrant traditional costumes and jewelry
+- Community feasts and traditional foods
+- Reconciliation and blessing ceremonies
+
+Date: Late September (typically September 27th or 28th)
+Location: Arba Minch and Gamo highland villages
+Duration: Several days of celebration`,
+  },
+  '9': {
+    title: 'Maze National Park',
+    description: 'A vital sanctuary for the endemic Swayne\'s Hartebeest.',
+    image: '/images/maze.jpg',
+    details: 'Maze National Park is a 210-square-kilometer wildlife haven named after the Maze River. It is famous for hosting one of the last remaining populations of the endangered Swayne\'s Hartebeest and the mysterious Wonja Stone Caves.',
+    fullContent: `Established in 2005, Maze National Park is a hidden gem in the Southern Nations, Nationalities, and Peoples' Region. The park is named after the Maze River that flows through it, creating a diverse ecosystem that supports a wide range of wildlife.
+
+The park's primary significance lies in its role as a sanctuary for the endangered Swayne's Hartebeest, a subspecies of antelope found nowhere else on earth but Ethiopia. Beyond wildlife, the park features fascinatng historical sites like the Wonja Stone Caves and natural wonders like the Bilbo hot springs.
+
+Highlights:
+- Swayne's Hartebeest observation
+- Exploring the Wonja Stone Caves
+- Birdwatching (over 130 species recorded)
+- Scenic views of the Maze River
+- Cultural insights into local legends of the Wonja Caves
+
+Best time to visit: December to February (dry season)
+Entry fee: Standard national park fees apply
+Activities: Wildlife viewing, cave exploration, birdwatching`,
+  },
 }
 
 export default function AttractionDetailPage() {

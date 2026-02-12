@@ -9,79 +9,114 @@ interface TimelineEvent {
 
 const timelineEvents: TimelineEvent[] = [
   {
-    year: '2000 BCE',
-    title: 'Early Settlement',
-    description: 'The Rift Valley becomes home to early human communities.',
+    year: 'c. 10,000 BCE',
+    title: 'Ancient Highland Heritage',
+    description:
+      'The Gamo Highlands trace their roots back approximately 10,000 years, where early inhabitants developed advanced terracing and agroforestry systems that sustained high-altitude agriculture for millennia.',
   },
   {
-    year: '1600s',
-    title: 'Gamo Kingdom',
-    description: 'The Gamo people establish their kingdom in the highlands.',
+    year: 'c. 200 BCE',
+    title: 'Lakeside Settlements',
+    description:
+      'Evidence from archaeological surveys indicates that early communities began settling around the fertile shores of Lake Abaya and Lake Chamo, utilizing the abundance of water and fish.',
   },
   {
-    year: '1890s',
-    title: 'Italian Exploration',
-    description: 'European explorers map the Rift Valley and discover its wonders.',
+    year: 'c. 1300 CE',
+    title: 'Rise of the Gamo Kingdoms',
+    description:
+      "The Gamo people established a sophisticated system of kingdoms and chieftaincies in the highlands surrounding modern-day Arba Minch. Their democratic assemblies ('Dulata') and unique cultural traditions laid the foundation for the region's identity.",
   },
   {
-    year: '1960',
-    title: 'Independence Era',
-    description: 'Modern Arba Minch emerges as a regional center.',
+    year: '16th Century',
+    title: 'Highland Resilience',
+    description:
+      'During the period of the Ahmed Gragn invasion and the subsequent Oromo migrations, the Gamo Highlands served as a vital refuge. The rugged terrain and strong social organization allowed communities to preserve their traditions while integrating new cultural influences.',
   },
   {
-    year: 'Today',
-    title: 'Tourism Gateway',
-    description: 'Arba Minch becomes Ethiopia\'s premier Rift Valley destination.',
+    year: '1962',
+    title: 'Modern City Foundation',
+    description:
+      "Arba Minch, meaning 'Forty Springs', was officially established as the administrative center of the Gamo-Gofa province, replacing Chencha due to its strategic location and plentiful water sources.",
+  },
+  {
+    year: '1974',
+    title: 'Nech Sar National Park',
+    description:
+      "The park was formally gazetted to protect the 'Bridge of God' isthmus and its unique wildlife, including the white grass plains that give the park its name.",
+  },
+  {
+    year: '1986',
+    title: 'Arba Minch University',
+    description:
+      'Founded as the Arba Minch Water Technology Institute, it established the city as a center for higher education and specialized research in water resources and engineering.',
+  },
+  {
+    year: '2005',
+    title: 'Maze National Park',
+    description:
+      "Established to protect the endangered Swayne's Hartebeest, this park added to the region's status as a critical biodiversity hotspot in the Rift Valley.",
+  },
+  {
+    year: '2010s–Present',
+    title: 'Tourism Renaissance',
+    description:
+      "Arba Minch has emerged as one of Ethiopia's premier ecotourism destinations. Improved infrastructure, new lodges, and growing international awareness have made the city a gateway to the Omo Valley and the lakes of the Rift Valley.",
   },
 ]
 
 const cultureArticles = [
   {
-    title: 'The Dorze People: Masters of Weaving',
+    title: 'The Dorze People: Masters of Highland Architecture',
     image: '/images/his5.jpg',
     excerpt:
-      'The Dorze people of the highlands are renowned for their intricate cotton weaving techniques, passed down through generations. Their iconic beehive-shaped houses are architectural marvels adapted to the highland climate.',
-    content: `The Dorze are one of Ethiopia's most distinctive ethnic groups, known for their exceptional weaving skills and unique architectural heritage. Their traditional beehive-shaped houses, constructed entirely from bamboo and enset (false banana) leaves, represent a perfect adaptation to their mountain environment.
+      'Renowned for their exceptional weaving and unique beehive-shaped houses that can stand up to 12 meters tall.',
+    content: `The Dorze are master architects and weavers whose culture is deeply rooted in the Gamo Highlands. Their iconic beehive-shaped huts are constructed from bamboo and enset (false banana) leaves, reaching heights of 12 meters. A unique feature of these structures is their portability; as termites eat the base, the entire house can be lifted and moved, progressively becoming shorter over its 80-year lifespan.
 
-Weaving is central to Dorze culture. The looms, operated primarily by women, create patterns of remarkable complexity. These textiles, featuring geometric designs in white cotton, are both functional and artistic expressions. The process—from spinning raw cotton to the final weave—can take weeks for a single piece.
-
-Visiting a Dorze village offers insight into a way of life that has remained largely unchanged for centuries. The warmth of the people and the preservation of traditional practices make it a cultural jewel worth exploring.`,
+Beyond architecture, the Dorze are Ethiopia's most celebrated weavers. Historically, their 'shamma' (cotton cloth) gained such fame that they came to dominate the textile trade in Addis Ababa following the 19th-century imperial expansion. This craft is a 'learning-by-doing' tradition passed down through generations of boys.`,
   },
   {
-    title: 'Gamo Traditions and Music',
+    title: 'Gamo Indigenous Democracy: The Woga and Dubusha',
     image: '/images/his2.jpg',
     excerpt:
-      'Music and dance form the heart of Gamo cultural expression. From ceremonial gatherings to celebrations, rhythmic patterns tell stories of heritage and community bonds.',
-    content: `The Gamo people have a rich musical tradition deeply woven into their social fabric. Traditional instruments such as the masinko (a single-stringed fiddle) and various drums create soundscapes that accompany everything from harvests to important rituals.
+      'A sophisticated system of traditional laws and assemblies that has guided social harmony for centuries.',
+    content: `The Gamo people practice a form of indigenous democracy anchored by the 'Woga' (traditional law) and governed through 'Dulata' (assemblies). These assemblies take place in 'Dubusha'—sacred public spaces or meadows that serve as forums for conflict resolution, social dialogue, and spiritual ceremonies.
 
-Gamo music often tells stories of heroic ancestors, love, and the challenges of life in the highlands. The rhythms are complex, layered, and require years of practice to master. Young musicians learn by ear, absorbing patterns and melodies from their elders.
-
-Dance accompanies the music, with specific movements for different occasions. Visitors to Arba Minch may encounter traditional dances at local celebrations and cultural events, offering a glimpse into the joy and expressiveness of Gamo culture.`,
+This social system emphasizes group solidarity and environmental stewardship. Ritual leaders and elders, known for their wisdom in interpreting the Woga, manage the ecosystem through rituals and councils that protect sacred forests and springs. This harmonious balance between human needs and nature is a cornerstone of Gamo identity.`,
   },
   {
-    title: 'Sacred Rituals and Spiritual Life',
+    title: 'Yo Maskala: The Gamo New Year',
     image: '/images/his3.jpg',
     excerpt:
-      'Spirituality permeates Gamo life, blending indigenous beliefs with religion. Sacred places and rituals mark important life transitions and seasonal cycles.',
-    content: `The Gamo people maintain a spiritual worldview that honors both the sacred landscape and community. Sacred forests, mountains, and water sources hold deep significance in their belief system. Many ceremonies are tied to agricultural cycles, ensuring blessings for crops and livestock.
+      'A vibrant celebration of renewal, reconciliation, and heritage that transforms the landscape every September.',
+    content: `Yo Maskala is the most significant yearly festival for the Gamo people, marking their traditional New Year and the celebration of the True Cross. It is a time for reconciliation, where community bonds are renewed and historical grievances are settled through the guidance of elders.
 
-Important life transitions—birth, adolescence, marriage, and death—are marked by specific rituals that reinforce community bonds and pass cultural knowledge to new generations. These practices, while evolving with modern influences, remain central to Gamo identity.
-
-Understanding these spiritual dimensions provides deeper appreciation for the landscape around Arba Minch and the people who call it home. Many tour guides can offer insights into these practices and the stories behind sacred sites.`,
+The festival is characterized by rhythmic 'Yo' chanting, traditional dances, and the lighting of the 'Demera' bonfire. Men and women dress in their finest hand-woven Gamo textiles, creating a sea of white and vibrant patterns. The celebration is not just religious but a profound expression of Gamo resilience and cultural continuity.`,
   },
 ]
 
+// Timeline Section
+
 export default function HistoryPage() {
   return (
-    <>
-      {/* Page Header */}
-      <section className="py-12 md:py-16 px-4 bg-muted/10">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-serif text-ink mb-4">
-            History & Culture
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl">
-            Discover the rich heritage of the Gamo people and the Rift Valley
+    <div className="min-h-screen bg-paper">
+      {/* Hero Section */}
+      <section className="relative py-20 px-4 text-paper overflow-hidden">
+        {/* Background Image Overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/histc.jpg"
+            alt="History of Arba Minch"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-ink/50" />
+        </div>
+
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-6xl font-serif mb-6 text-paper">History & Culture</h1>
+          <p className="text-xs md:text-sm font-mono font-bold text-paper max-w-2xl leading-relaxed uppercase tracking-[0.2em]">
+            Discover the rich heritage of the Gamo people and the Rift Valley.
           </p>
         </div>
       </section>
@@ -112,7 +147,9 @@ export default function HistoryPage() {
                       {event.year}
                     </span>
                     <h3 className="text-2xl font-serif text-ink mb-3">{event.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{event.description}</p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {event.description}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -143,7 +180,9 @@ export default function HistoryPage() {
                 </p>
                 <div className="prose prose-sm max-w-prose text-ink leading-relaxed space-y-4">
                   {article.content.split('\n\n').map((para, pIdx) => (
-                    <p key={pIdx}>{para}</p>
+                    <p key={pIdx}>
+                      {para}
+                    </p>
                   ))}
                 </div>
               </div>
@@ -168,6 +207,14 @@ export default function HistoryPage() {
           </Link>
         </div>
       </section>
-    </>
+      {/* Back Link */}
+      <section className="py-12 px-4 border-t border-muted">
+        <div className="max-w-4xl mx-auto">
+          <Link href="/" className="inline-flex items-center gap-2 text-forest font-medium hover:text-forest/80 transition-colors">
+            ← Back to Home
+          </Link>
+        </div>
+      </section>
+    </div>
   )
 }
