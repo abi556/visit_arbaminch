@@ -4,15 +4,14 @@ import Image from "next/image"
 import { useEffect, useState } from "react"
 import Link from "next/link"
 
-const partners = [
-  "UNESCO",
-  "NATIONAL GEOGRAPHIC",
-  "ETHIOPIAN AIRLINES",
-  "AFRICAN PARKS",
-  "WORLD WILDLIFE FUND",
-  "LONELY PLANET",
-  "USAID",
-  "GIZ",
+const partnerLogos = [
+  "/images/lg1.png",
+  "/images/lg2.png",
+  "/images/lg3.png",
+  "/images/lg4.png",
+  "/images/lg5.png",
+  "/images/lg6.png",
+  "/images/lg7.png",
 ]
 
 const heroImages = [
@@ -132,26 +131,30 @@ export function Hero() {
       </div>
 
       {/* Logo Marquee Bar - Positioned at the bottom */}
-      <div className="absolute bottom-0 left-0 right-0 z-20 border-t border-paper/10 bg-ink/30 backdrop-blur-sm">
-        <div className="flex items-center">
-          {/* Static Label */}
-          <div className="flex-shrink-0 border-r border-paper/10 px-6 py-4 md:px-10">
-            <span className="whitespace-nowrap font-mono text-[10px] tracking-[0.25em] text-paper/50 uppercase">
-              {"Partners \u2014"}
-            </span>
-          </div>
-          {/* Scrolling Logos */}
-          <div className="flex-1 overflow-hidden">
-            <div className="flex animate-marquee items-center">
-              {[...partners, ...partners].map((partner, i) => (
-                <span
-                  key={`${partner}-${i}`}
-                  className="mx-8 whitespace-nowrap font-mono text-[10px] tracking-[0.2em] text-paper/30 uppercase md:mx-12 md:text-xs"
-                >
-                  {partner}
-                </span>
-              ))}
-            </div>
+      <div className="absolute bottom-0 left-0 right-0 z-20 py-10">
+        <div
+          className="mx-auto max-w-2xl overflow-hidden px-4"
+          style={{
+            maskImage: "linear-gradient(to right, transparent, black 20%, black 80%, transparent)",
+            WebkitMaskImage: "linear-gradient(to right, transparent, black 20%, black 80%, transparent)"
+          }}
+        >
+          <div className="flex animate-marquee items-center">
+            {[...partnerLogos, ...partnerLogos].map((src, i) => (
+              <div
+                key={`${src}-${i}`}
+                className="flex w-1/4 flex-shrink-0 items-center justify-center px-2"
+              >
+                <div className="relative h-10 w-24 transition-all duration-300 hover:scale-110">
+                  <Image
+                    src={src}
+                    alt="Partner Logo"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
