@@ -5,13 +5,13 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 
 const partnerLogos = [
-  "/images/lg1.png",
-  "/images/lg2.png",
-  "/images/lg3.png",
-  "/images/lg4.png",
-  "/images/lg5.png",
-  "/images/lg6.png",
-  "/images/lg7.png",
+  { src: "/images/lg1.png", href: "https://www.ethiopianairlines.com/us" },
+  { src: "/images/lg2.png", href: "https://visitethiopia.et/" },
+  { src: "/images/lg3.png", href: "https://www.nationalgeographic.com/" },
+  { src: "/images/lg4.png", href: "https://www.worldwildlife.org/" },
+  { src: "/images/lg5.png", href: "https://www.unesco.org/en" },
+  { src: "/images/lg6.png", href: "https://www.lonelyplanet.com/" },
+  { src: "/images/lg7.png", href: "https://www.lonelyplanet.com/" },
 ]
 
 const heroImages = [
@@ -133,26 +133,31 @@ export function Hero() {
       {/* Logo Marquee Bar - Positioned at the bottom */}
       <div className="absolute bottom-0 left-0 right-0 z-20 py-10">
         <div
-          className="mx-auto max-w-2xl overflow-hidden px-4"
+          className="mx-auto max-w-4xl overflow-hidden px-4"
           style={{
-            maskImage: "linear-gradient(to right, transparent, black 20%, black 80%, transparent)",
-            WebkitMaskImage: "linear-gradient(to right, transparent, black 20%, black 80%, transparent)"
+            maskImage: "linear-gradient(to right, transparent, black 15%, black 85%, transparent)",
+            WebkitMaskImage: "linear-gradient(to right, transparent, black 15%, black 85%, transparent)"
           }}
         >
-          <div className="flex animate-marquee items-center">
-            {[...partnerLogos, ...partnerLogos].map((src, i) => (
+          <div className="flex animate-marquee items-center w-max hover:[animation-play-state:paused]">
+            {[...partnerLogos, ...partnerLogos].map((partner, i) => (
               <div
-                key={`${src}-${i}`}
-                className="flex w-1/4 flex-shrink-0 items-center justify-center px-2"
+                key={`${partner.src}-${i}`}
+                className="flex w-[160px] flex-shrink-0 items-center justify-center px-8"
               >
-                <div className="relative h-10 w-24 transition-all duration-300 hover:scale-110">
+                <a
+                  href={partner.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative h-10 w-full transition-all duration-300 hover:scale-110"
+                >
                   <Image
-                    src={src}
+                    src={partner.src}
                     alt="Partner Logo"
                     fill
                     className="object-contain"
                   />
-                </div>
+                </a>
               </div>
             ))}
           </div>
