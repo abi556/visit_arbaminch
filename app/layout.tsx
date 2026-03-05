@@ -30,7 +30,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://visitarbaminch.et'), // Replace with actual domain
   title: {
-    default: 'Arba Minch — Between Two Great Waters | Official Tourism Guide',
+    default: 'Arba Minch — Heaven of Rift Valley | Official Tourism Guide',
     template: '%s | Visit Arba Minch'
   },
   description:
