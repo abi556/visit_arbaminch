@@ -155,54 +155,99 @@ export function Header() {
 
       {/* Mobile Menu Overlay */}
       {mobileOpen && (
-        <div className="fixed inset-0 z-40 lg:hidden bg-ink/10 backdrop-blur-sm" onClick={() => setMobileOpen(false)} />
+        <div
+          className="fixed inset-0 z-40 lg:hidden bg-ink/60 backdrop-blur-md transition-opacity duration-300"
+          onClick={() => setMobileOpen(false)}
+        />
       )}
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="fixed inset-y-0 right-0 z-50 w-full max-w-xs bg-paper border-l border-muted overflow-y-auto lg:hidden">
+        <div className="fixed inset-y-0 right-0 z-50 w-[85%] max-w-sm bg-ink border-l border-paper/10 overflow-y-auto lg:hidden shadow-2xl animate-in slide-in-from-right duration-500">
           {/* Header */}
-          <div className="flex items-center justify-between p-4 border-b border-muted">
-            <Link href="/" className="text-lg font-semibold text-ink" onClick={() => setMobileOpen(false)}>
-              Arba Minch
+          <div className="flex items-center justify-between p-6 border-b border-paper/10">
+            <Link href="/" className="flex items-center gap-3" onClick={() => setMobileOpen(false)}>
+              <div className="relative w-10 h-10">
+                <Image
+                  src="/images/fav.png"
+                  alt="Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <span className="text-xl font-serif italic text-paper tracking-wider">Arba Minch</span>
             </Link>
-            <button onClick={() => setMobileOpen(false)} className="text-ink hover:text-clay transition-colors">
-              <X size={24} />
+            <button
+              onClick={() => setMobileOpen(false)}
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-paper/5 text-paper hover:bg-paper/10 transition-colors"
+            >
+              <X size={20} />
             </button>
           </div>
 
           {/* Mobile Menu Items */}
-          <div className="py-4">
+          <div className="px-6 py-10 space-y-10">
             {menuItems.map((item) => (
-              <div key={item.label}>
-                <button
-                  onClick={() => setExpandedMobile(expandedMobile === item.label ? null : item.label)}
-                  className="w-full px-4 py-3 text-left font-medium text-ink hover:bg-muted transition-colors flex items-center justify-between"
-                >
-                  {item.label}
-                  <span className={`transition-transform ${expandedMobile === item.label ? 'rotate-180' : ''}`}>
-                    ▼
-                  </span>
-                </button>
-                {expandedMobile === item.label && (
-                  <div className="bg-muted/30 py-2">
-                    {item.submenu.map((subitem) => (
-                      <Link
-                        key={subitem.label}
-                        href={subitem.href}
-                        className="block px-8 py-2 text-sm text-ink hover:text-clay transition-colors"
-                        onClick={() => setMobileOpen(false)}
-                      >
-                        {subitem.label}
-                      </Link>
-                    ))}
-                  </div>
-                )}
+              <div key={item.label} className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="h-[1px] w-4 bg-forest/40" />
+                  <h3 className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/40">
+                    {item.label}
+                  </h3>
+                </div>
+                <div className="grid gap-4 pl-8">
+                  {item.submenu.map((subitem) => (
+                    <Link
+                      key={subitem.label}
+                      href={subitem.href}
+                      className="group flex items-center justify-between font-serif text-xl text-paper/80 hover:text-paper transition-all"
+                      onClick={() => setMobileOpen(false)}
+                    >
+                      <span className="italic tracking-wide">{subitem.label}</span>
+                      <span className="text-[10px] font-mono text-paper/20 group-hover:text-forest transition-colors translate-x-2 group-hover:translate-x-0 opacity-0 group-hover:opacity-100 duration-300">
+                        →
+                      </span>
+                    </Link>
+                  ))}
+                </div>
               </div>
             ))}
+
+            {/* Extra Links & Utility */}
+            <div className="pt-10 border-t border-paper/10 space-y-8">
+              <div className="grid grid-cols-2 gap-4">
+                <Link
+                  href="/blog"
+                  className="px-4 py-4 bg-paper/5 border border-paper/5 rounded-sm text-center font-mono text-[10px] uppercase tracking-widest text-paper/70 hover:bg-paper/10 hover:border-paper/20 transition-all"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Blog
+                </Link>
+                <Link
+                  href="/contact"
+                  className="px-4 py-4 bg-paper/5 border border-paper/5 rounded-sm text-center font-mono text-[10px] uppercase tracking-widest text-paper/70 hover:bg-paper/10 hover:border-paper/20 transition-all"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Contact
+                </Link>
+              </div>
+
+              <div className="pt-4 flex flex-col items-center gap-6">
+                <Weather />
+                <button className="flex items-center gap-3 px-8 py-3 bg-forest text-paper rounded-full font-mono text-[10px] uppercase tracking-widest hover:bg-forest/90 transition-all">
+                  <Globe size={14} className="animate-pulse" />
+                  <span>Language: EN</span>
+                </button>
+              </div>
+            </div>
           </div>
 
-
+          {/* Footer Quote */}
+          <div className="p-10 mt-auto opacity-20 group">
+            <p className="italic font-serif text-paper text-sm text-center tracking-widest group-hover:opacity-100 transition-opacity">
+              Forty Springs, Infinite Wonder.
+            </p>
+          </div>
         </div>
       )}
     </header>
