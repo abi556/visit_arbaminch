@@ -8,13 +8,33 @@ import { usePathname } from 'next/navigation'
 import { fetchArbaMinchWeather } from '@/utils/weather'
 
 function Weather() {
-  const [weather, setWeather] = useState('Loading...')
+  const [weatherData, setWeatherData] = useState<any>(null)
 
   useEffect(() => {
-    fetchArbaMinchWeather().then((data) => setWeather(data.formatted))
+    fetchArbaMinchWeather().then((data) => setWeatherData(data))
   }, [])
 
-  return <div className="text-base font-mono text-paper/60">{weather}</div>
+  if (!weatherData) return <div className="text-base font-mono text-paper/60 tracking-wider">Loading...</div>
+
+  return (
+    <div className="flex items-center gap-3 bg-paper/5 px-4 py-1.5 rounded-full border border-paper/10">
+      <div className="relative w-8 h-8 flex-shrink-0">
+        <Image
+          src={`https://openweathermap.org/img/wn/${weatherData.icon}@2x.png`}
+          alt={weatherData.description}
+          fill
+          className="object-contain"
+          unoptimized
+        />
+      </div>
+      <div className="text-sm font-mono text-paper font-bold tracking-[0.1em] flex items-center gap-2">
+        <span>{weatherData.temp}°C</span>
+        <span className="hidden md:inline opacity-60 font-medium border-l border-paper/20 pl-2">
+          {weatherData.description}
+        </span>
+      </div>
+    </div>
+  )
 }
 
 const menuItems = [

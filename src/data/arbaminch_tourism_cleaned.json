@@ -14,6 +14,9 @@
       "Resort hotel"
     ],
     "sources": {
+      "Official Website": {
+        "link": "https://hailehotelsandresorts.com/arbaminch_resort/"
+      },
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Haile+Resort+Arba+Minch/data=!4m10!3m9!1s0x17babda066601d7b:0x1d8e5b49ce1e817!5m2!4m1!1i2!8m2!3d6.013179!4d37.5572629!16s%2Fg%2F11f62sfl8c!19sChIJex1gZqC9uhcRF-jhnLTl2AE?authuser=0&hl=en&rclk=1",
         "rating": "4.6(671)"
@@ -26,50 +29,12 @@
         "rating": 8,
         "price": "US$131",
         "address": "Arba Minch"
-      }
-    }
-  },
-  {
-    "name": "Mora Heights Hotel",
-    "types": [
-      "hotels",
-      "motels",
-      "resorts",
-      "lodges",
-      "hotel"
-    ],
-    "categories": [
-      ""
-    ],
-    "sources": {
-      "Google Maps": {
-        "link": "https://www.google.com/maps/place/Mora+Heights+Hotel/data=!4m10!3m9!1s0x17babb8c7cad9f61:0x20ecd2f2bc69a348!5m2!4m1!1i2!8m2!3d5.9982268!4d37.5474263!16s%2Fg%2F11f4wv3dkc!19sChIJYZ-tfIy7uhcRSKNpvPLS7CA?authuser=0&hl=en&rclk=1",
-        "rating": "4.2(105)"
       },
-      "TripAdvisor": {
-        "link": "https://www.tripadvisor.com/Hotel_Review-g776853-d6430680-Reviews-Mora_Heights_Hotel-Arba_Minch_Southern_Nations_Nationalities_and_People_s_Region.html"
-      }
-    }
-  },
-  {
-    "name": "Jinka Resort - Arbaminch",
-    "types": [
-      "hotels",
-      "motels",
-      "resorts",
-      "lodges",
-      "hotel"
-    ],
-    "categories": [
-      "Resort hotel"
-    ],
-    "sources": {
-      "Google Maps": {
-        "link": "https://www.google.com/maps/place/Jinka+Resort+-+Arbaminch/data=!4m10!3m9!1s0x17babbef39352285:0x67f7b43e1323d52d!5m2!4m1!1i2!8m2!3d6.0228117!4d37.5519449!16s%2Fg%2F11hm30ynvf!19sChIJhSI1Oe-7uhcRLdUjEz6092c?authuser=0&hl=en&rclk=1",
-        "rating": "4.3(73)"
+      "Expedia": {
+        "link": "https://expe.onelink.me/hnLd/bzx76g8n"
       },
-      "TripAdvisor": {
-        "link": "https://www.tripadvisor.com/Hotel_Review-g776853-d21287434-Reviews-Jinka_Resort_Arbaminch-Arba_Minch_Southern_Nations_Nationalities_and_People_s_Region.html"
+      "Trip.com": {
+        "link": "https://www.trip.com/w/KrmqgveTlT2"
       }
     }
   },
@@ -94,25 +59,18 @@
       },
       "TripAdvisor": {
         "link": "https://www.tripadvisor.com/Hotel_Review-g776853-d1900596-Reviews-Paradise_Lodge_Arbaminch-Arba_Minch_Southern_Nations_Nationalities_and_People_s_Region.html"
-      }
-    }
-  },
-  {
-    "name": "አርባ ምንጭ የቱሪስት ሆቴል / Arba minch Tourist hotel",
-    "types": [
-      "hotels",
-      "motels",
-      "resorts",
-      "lodges",
-      "guest house"
-    ],
-    "categories": [
-      ""
-    ],
-    "sources": {
-      "Google Maps": {
-        "link": "https://www.google.com/maps/place/%E1%8A%A0%E1%88%AD%E1%89%A3+%E1%88%9D%E1%8A%95%E1%8C%AD+%E1%8B%A8%E1%89%B1%E1%88%AA%E1%88%B5%E1%89%B5+%E1%88%86%E1%89%B4%E1%88%8D+%2F+Arba+minch+Tourist+hotel/data=!4m10!3m9!1s0x17babca142d3f419:0x1d06b75b75d4c6c6!5m2!4m1!1i2!8m2!3d6.0330652!4d37.5578705!16s%2Fg%2F1ttxf54n!19sChIJGfTTQqG8uhcRxsbUdVu3Bh0?authuser=0&hl=en&rclk=1",
-        "rating": "3.7(230)"
+      },
+      "Official Website": {
+        "link": "https://www.paradiselodgeethiopia.com/"
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": "https://expe.onelink.me/hnLd/9mok9yo4"
+      },
+      "Trip.com": {
+        "link": "https://www.trip.com/w/6vol36fTlT2"
       }
     }
   },
@@ -130,55 +88,187 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Wubete+Hotel/data=!4m10!3m9!1s0x17babb9c4e6511d5:0xfa0cb0846e09f686!5m2!4m1!1i2!8m2!3d6.0120507!4d37.5393806!16s%2Fg%2F1tdt3ttx!19sChIJ1RFlTpy7uhcRhvYJboSwDPo?authuser=0&hl=en&rclk=1",
         "rating": "4.3(128)"
+      },
+      "Official Website": {
+        "link": "https://wubetehotel.com/"
+      },
+      "TripAdvisor": {
+        "link": "https://www.tripadvisor.com/Hotel_Review-g776853-d26527796-Reviews-Wubete_Hotel-Arba_Minch_Southern_Nations_Nationalities_and_People_s_Region.html"
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
   {
-    "name": "Bekele Mola Hotel",
+    "name": "Jinka Resort - Arbaminch",
     "types": [
       "hotels",
       "motels",
       "resorts",
-      "lodges"
+      "lodges",
+      "hotel"
     ],
     "categories": [
-      "Hotel"
+      "Resort hotel"
     ],
     "sources": {
       "Google Maps": {
-        "link": "https://www.google.com/maps/place/Bekele+Mola+Hotel/data=!4m10!3m9!1s0x17babb8639be0505:0xbf41706e024b6ea1!5m2!4m1!1i2!8m2!3d6.0062264!4d37.5509131!16s%2Fg%2F1td3nw9k!19sChIJBQW-OYa7uhcRoW5LAm5wQb8?authuser=0&hl=en&rclk=1",
-        "rating": "3.7(77)"
+        "link": "https://www.google.com/maps/place/Jinka+Resort+-+Arbaminch/data=!4m10!3m9!1s0x17babbef39352285:0x67f7b43e1323d52d!5m2!4m1!1i2!8m2!3d6.0228117!4d37.5519449!16s%2Fg%2F11hm30ynvf!19sChIJhSI1Oe-7uhcRLdUjEz6092c?authuser=0&hl=en&rclk=1",
+        "rating": "4.3(73)"
+      },
+      "TripAdvisor": {
+        "link": "https://www.tripadvisor.com/Hotel_Review-g776853-d21287434-Reviews-Jinka_Resort_Arbaminch-Arba_Minch_Southern_Nations_Nationalities_and_People_s_Region.html"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": "https://expe.onelink.me/hnLd/p7evypr5"
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
   {
-    "name": "Mulu View Hotel",
+    "name": "Emerald Resort",
     "types": [
+      "resorts",
       "hotels",
-      "motels"
+      "accommodation"
+    ],
+    "categories": [
+      "Resort hotel"
     ],
     "sources": {
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": "https://www.tripadvisor.com/Hotel_Review-g776853-d14131304-Reviews-Emerald_Resort-Arba_Minch_Southern_Nations_Nationalities_and_People_s_Region.html"
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": "https://expe.onelink.me/hnLd/7xlzwi5y"
+      },
       "Google Maps": {
-        "link": "https://www.google.com/maps/place/Mulu+View+Hotel/data=!4m10!3m9!1s0x17babca76ce7d96b:0xefd3610cfed6b4e4!5m2!4m1!1i2!8m2!3d6.0357502!4d37.5546952!16s%2Fg%2F11dxddfm4m!19sChIJa9nnbKe8uhcR5LTW_gxh0-8?authuser=0&hl=en&rclk=1",
-        "rating": "2.7(7)"
+        "link": "https://maps.app.goo.gl/Qu2iZact6S8XxvyP6",
+        "rating": "3.3 (70)"
+      },
+      "Trip.com": {
+        "link": "https://www.trip.com/w/t7hkHFwTlT2"
       }
     }
   },
-  {
-    "name": "Forty Spring Hotel",
+   {
+    "name": "Daros International Hotel",
     "types": [
       "hotels",
       "motels",
       "resorts",
-      "lodges"
+      "lodges",
+      "guest house",
+      "hotel"
+    ],
+    "sources": {
+      "Google Maps": {
+        "link": "https://www.google.com/maps/place/Daros+International+Hotel/data=!4m10!3m9!1s0x17babd9228fbae2f:0x37ffe4da4923629b!5m2!4m1!1i2!8m2!3d6.0257928!4d37.5547503!16s%2Fg%2F11ltp6lc_5!19sChIJL677KJK9uhcRm2IjSdrk_zc?authuser=0&hl=en&rclk=1",
+        "rating": "4.6(74)"
+      },
+      "TripAdvisor": {
+        "link": "https://www.tripadvisor.com/Hotel_Review-g776853-d31916394-Reviews-Daros_International_Hotel-Arba_Minch_Southern_Nations_Nationalities_and_People_s_Regi.html"
+      },
+      "Official Website": {
+        "link": "https://darosinternationalhotel.com/"
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
+      }
+    }
+  },
+  {
+    "name": "Mora Heights Hotel",
+    "types": [
+      "hotels",
+      "motels",
+      "resorts",
+      "lodges",
+      "hotel"
     ],
     "categories": [
       ""
     ],
     "sources": {
       "Google Maps": {
-        "link": "https://www.google.com/maps/place/Forty+Spring+Hotel/data=!4m10!3m9!1s0x17babb85986f005b:0x71b66a83d4c08a91!5m2!4m1!1i2!8m2!3d6.0057631!4d37.545865!16s%2Fg%2F11cssw1_l5!19sChIJWwBvmIW7uhcRkYrA1INqtnE?authuser=0&hl=en&rclk=1",
-        "rating": "3.8(45)"
+        "link": "https://www.google.com/maps/place/Mora+Heights+Hotel/data=!4m10!3m9!1s0x17babb8c7cad9f61:0x20ecd2f2bc69a348!5m2!4m1!1i2!8m2!3d5.9982268!4d37.5474263!16s%2Fg%2F11f4wv3dkc!19sChIJYZ-tfIy7uhcRSKNpvPLS7CA?authuser=0&hl=en&rclk=1",
+        "rating": "4.2(105)"
+      },
+      "TripAdvisor": {
+        "link": "https://www.tripadvisor.com/Hotel_Review-g776853-d6430680-Reviews-Mora_Heights_Hotel-Arba_Minch_Southern_Nations_Nationalities_and_People_s_Region.html"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": "https://expe.onelink.me/hnLd/rqntgwjf"
+      },
+      "Trip.com": {
+        "link": "https://www.trip.com/w/vBnSU0fTlT2"
+      }
+    }
+  },
+  {
+    "name": "Arba minch Tourist hotel",
+    "types": [
+      "hotels",
+      "motels",
+      "resorts",
+      "lodges",
+      "guest house"
+    ],
+    "categories": [
+      ""
+    ],
+    "sources": {
+      "Google Maps": {
+        "link": "https://www.google.com/maps/place/%E1%8A%A0%E1%88%AD%E1%89%A3+%E1%88%9D%E1%8A%95%E1%8C%AD+%E1%8B%A8%E1%89%B1%E1%88%AA%E1%88%B5%E1%89%B5+%E1%88%86%E1%89%B4%E1%88%8D+%2F+Arba+minch+Tourist+hotel/data=!4m10!3m9!1s0x17babca142d3f419:0x1d06b75b75d4c6c6!5m2!4m1!1i2!8m2!3d6.0330652!4d37.5578705!16s%2Fg%2F1ttxf54n!19sChIJGfTTQqG8uhcRxsbUdVu3Bh0?authuser=0&hl=en&rclk=1",
+        "rating": "3.7(230)"
+      },
+      "Official Website": {
+        "link": "https://arbaminchtouristhotel.com/"
+      },
+      "TripAdvisor": {
+        "link": "https://www.tripadvisor.com/Hotel_Review-g776853-d2308340-Reviews-Arba_Minch_Tourist_Hotel-Arba_Minch_Southern_Nations_Nationalities_and_People_s_Region.html"
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -197,29 +287,150 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Saro+Hotel/data=!4m10!3m9!1s0x17babb992a8acf27:0xc18daa96198e10df!5m2!4m1!1i2!8m2!3d6.0070807!4d37.5381126!16s%2Fg%2F11khcvk3ym!19sChIJJ8-KKpm7uhcR3xCOGZaqjcE?authuser=0&hl=en&rclk=1",
         "rating": "4.5(43)"
+      },
+      "Official Website": {
+        "link": "https://www.sarohotel.com/"
+      },
+      "TripAdvisor": {
+        "link": "https://www.tripadvisor.com/Hotel_Review-g776853-d27977597-Reviews-Saro_Hotel-Arba_Minch_Southern_Nations_Nationalities_and_People_s_Region.html"
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
   {
-    "name": "Daros International Hotel",
+    "name": "Arbaminch Eco campsite",
+    "types": [
+      "hotels",
+      "lodges"
+    ],
+    "categories": [
+      "Campground"
+    ],
+    "sources": {
+      "Google Maps": {
+        "link": "https://www.google.com/maps/place/Arbaminch+Eco+campsite/data=!4m10!3m9!1s0x17babb3a0ab9e387:0x6661caa5b5172ef9!5m2!4m1!1i2!8m2!3d5.9948735!4d37.5391464!16s%2Fg%2F11lgkf4x1x!19sChIJh-O5Cjq7uhcR-S4XtaXKYWY?authuser=0&hl=en&rclk=1",
+        "rating": "4.8(36)"
+      },
+      "Official Website": {
+        "link": "https://www.arbaminchecocampsite.com/"
+      },
+      "TripAdvisor": {
+        "link": "https://www.tripadvisor.com/Hotel_Review-g776853-d23094816-Reviews-Arbaminch_Eco_Campsite-Arba_Minch_Southern_Nations_Nationalities_and_People_s_Region.html"
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": "https://www.trip.com/travel-guide/attraction/arba-minch/arbaminch-eco-campsite-146938073/"
+      }
+    }
+  },
+  {
+    "name": "Bekele Mola Hotel",
     "types": [
       "hotels",
       "motels",
       "resorts",
-      "lodges",
-      "guest house",
-      "hotel"
+      "lodges"
+    ],
+    "categories": [
+      "Hotel"
     ],
     "sources": {
       "Google Maps": {
-        "link": "https://www.google.com/maps/place/Daros+International+Hotel/data=!4m10!3m9!1s0x17babd9228fbae2f:0x37ffe4da4923629b!5m2!4m1!1i2!8m2!3d6.0257928!4d37.5547503!16s%2Fg%2F11ltp6lc_5!19sChIJL677KJK9uhcRm2IjSdrk_zc?authuser=0&hl=en&rclk=1",
-        "rating": "4.6(74)"
+        "link": "https://www.google.com/maps/place/Bekele+Mola+Hotel/data=!4m10!3m9!1s0x17babb8639be0505:0xbf41706e024b6ea1!5m2!4m1!1i2!8m2!3d6.0062264!4d37.5509131!16s%2Fg%2F1td3nw9k!19sChIJBQW-OYa7uhcRoW5LAm5wQb8?authuser=0&hl=en&rclk=1",
+        "rating": "3.7(77)"
+      },
+      "Official Website": {
+        "link": ""
       },
       "TripAdvisor": {
-        "link": "https://www.tripadvisor.com/Hotel_Review-g776853-d31916394-Reviews-Daros_International_Hotel-Arba_Minch_Southern_Nations_Nationalities_and_People_s_Regi.html"
+        "link": "https://www.tripadvisor.com/Hotel_Review-g776853-d945758-Reviews-Bekele_Mola_Hotel-Arba_Minch_Southern_Nations_Nationalities_and_People_s_Region.html"
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
+  {
+    "name": "Mulu View Hotel",
+    "types": [
+      "hotels",
+      "motels"
+    ],
+    "sources": {
+      "Google Maps": {
+        "link": "https://www.google.com/maps/place/Mulu+View+Hotel/data=!4m10!3m9!1s0x17babca76ce7d96b:0xefd3610cfed6b4e4!5m2!4m1!1i2!8m2!3d6.0357502!4d37.5546952!16s%2Fg%2F11dxddfm4m!19sChIJa9nnbKe8uhcR5LTW_gxh0-8?authuser=0&hl=en&rclk=1",
+        "rating": "2.7(7)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
+      }
+    }
+  },
+  {
+    "name": "Forty Spring Hotel",
+    "types": [
+      "hotels",
+      "motels",
+      "resorts",
+      "lodges"
+    ],
+    "categories": [
+      ""
+    ],
+    "sources": {
+      "Google Maps": {
+        "link": "https://www.google.com/maps/place/Forty+Spring+Hotel/data=!4m10!3m9!1s0x17babb85986f005b:0x71b66a83d4c08a91!5m2!4m1!1i2!8m2!3d6.0057631!4d37.545865!16s%2Fg%2F11cssw1_l5!19sChIJWwBvmIW7uhcRkYrA1INqtnE?authuser=0&hl=en&rclk=1",
+        "rating": "3.8(45)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": "https://www.tripadvisor.com/Hotel_Review-g776853-d3491310-Reviews-Forty_Springs_Hotel-Arba_Minch_Southern_Nations_Nationalities_and_People_s_Region.html"
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
+      }
+    }
+  },
+  
   {
     "name": "Lambadina Hotel",
     "types": [
@@ -231,6 +442,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Lambadina+Hotel/data=!4m10!3m9!1s0x17babc9dee124205:0x6fef1be3c7b4ba09!5m2!4m1!1i2!8m2!3d6.0249406!4d37.5541762!16s%2Fg%2F11c1xqdvbn!19sChIJBUIS7p28uhcRCbq0x-Mb728?authuser=0&hl=en&rclk=1",
         "rating": "3.9(17)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -248,22 +474,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/AnjoNus+Hotel/data=!4m10!3m9!1s0x17babb4c9f97a855:0xd1225a61623d0165!5m2!4m1!1i2!8m2!3d6.0146177!4d37.5452494!16s%2Fg%2F11lfk85kck!19sChIJVaiXn0y7uhcRZQE9YmFaItE?authuser=0&hl=en&rclk=1",
         "rating": "4.3(6)"
-      }
-    }
-  },
-  {
-    "name": "Arbaminch Eco campsite",
-    "types": [
-      "hotels",
-      "lodges"
-    ],
-    "categories": [
-      "Campground"
-    ],
-    "sources": {
-      "Google Maps": {
-        "link": "https://www.google.com/maps/place/Arbaminch+Eco+campsite/data=!4m10!3m9!1s0x17babb3a0ab9e387:0x6661caa5b5172ef9!5m2!4m1!1i2!8m2!3d5.9948735!4d37.5391464!16s%2Fg%2F11lgkf4x1x!19sChIJh-O5Cjq7uhcR-S4XtaXKYWY?authuser=0&hl=en&rclk=1",
-        "rating": "4.8(36)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -281,6 +506,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Dorze+Lodge/data=!4m10!3m9!1s0x17baa09c2084723b:0x9aef7e9b67928ba1!5m2!4m1!1i2!8m2!3d6.1807355!4d37.5799436!16s%2Fg%2F11c5hj8sk3!19sChIJO3KEIJyguhcRoYuSZ5t-75o?authuser=0&hl=en&rclk=1",
         "rating": "4.3(53)"
+      },
+      "Official Website": {
+        "link": "https://dorzelodge.com/"
+      },
+      "TripAdvisor": {
+        "link": "https://www.tripadvisor.com/Hotel_Review-g776853-d2502716-Reviews-Dorze_Lodge-Arba_Minch_Southern_Nations_Nationalities_and_People_s_Region.html"
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -293,6 +533,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Zebib+Pension/data=!4m10!3m9!1s0x17babb5f0b93fd2d:0x824f68f3eb85617!5m2!4m1!1i2!8m2!3d6.0054094!4d37.5480614!16s%2Fg%2F11c1vm0r09!19sChIJLf2TC1-7uhcRF1a4Po_2JAg?authuser=0&hl=en&rclk=1",
         "rating": "3.5(23)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -308,6 +563,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Nati+Pension/data=!4m10!3m9!1s0x17babd2f279870eb:0xfd5d1ec36e45341c!5m2!4m1!1i2!8m2!3d6.0358917!4d37.5631276!16s%2Fg%2F11fstx58x0!19sChIJ63CYJy-9uhcRHDRFbsMeXf0?authuser=0&hl=en&rclk=1",
         "rating": "2.9(14)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -319,6 +589,21 @@
     "sources": {
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Temret+Pension/data=!4m10!3m9!1s0x17babdc4fdb46ff3:0xe5af90b522eccfc8!5m2!4m1!1i2!8m2!3d6.0295882!4d37.5579928!16s%2Fg%2F11vbx323g_!19sChIJ82-0_cS9uhcRyM_sIrWQr-U?authuser=0&hl=en&rclk=1"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -331,6 +616,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Ezana+international+hotel/data=!4m7!3m6!1s0x17babbf7e01c3c93:0xb5321b1b5b5a6cd1!8m2!3d6.0063326!4d37.5439008!16s%2Fg%2F11jt3w6d69!19sChIJkzwc4Pe7uhcR0WxaWxsbMrU?authuser=0&hl=en&rclk=1",
         "rating": "3.8(19)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": "https://www.tripadvisor.com/Hotel_Review-g776853-d3959193-Reviews-Ezana_Arbaminch_Hotel-Arba_Minch_Southern_Nations_Nationalities_and_People_s_Region.html"
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -343,6 +643,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Derik+Hotel/data=!4m7!3m6!1s0x17babb1e23a532b5:0xba918eb43b943548!8m2!3d6.0125081!4d37.5400914!16s%2Fg%2F11h2j6yh7j!19sChIJtTKlIx67uhcRSDWUO7SOkbo?authuser=0&hl=en&rclk=1",
         "rating": "3.9(51)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -362,6 +677,18 @@
         "link": "https://www.booking.com/hotel/et/heaven-guest-house-arba-minch2.en-gb.html?aid=304142&label=gen173nr-10CAQoggJCG3NlYXJjaF9hcmJhIG1pbmNoLCBldGhpb3BpYUgzWARoR4gBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCuNaQzQbAAgHSAiRmOWY0ZTBiZS0yOWEyLTQyMTctODE4Zi1lNWJlYzg5YWM4OGbYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-03-15&checkout=2026-03-16&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=c84b54dc754100a4&srepoch=1772366653&all_sr_blocks=1582862201_429402719_2_0_0&highlighted_blocks=1582862201_429402719_2_0_0&matching_block_id=1582862201_429402719_2_0_0&sr_pri_blocks=1582862201_429402719_2_0_0__5680&from=searchresults",
         "price": "US$57",
         "address": "Arba Minch"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -374,6 +701,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Rehoboth+Guest+House+And+pension/data=!4m7!3m6!1s0x17babca1ea443b21:0x8b43fee5d3a917d5!8m2!3d6.0306775!4d37.5575603!16s%2Fg%2F11c55rrdyc!19sChIJITtE6qG8uhcR1Rep0-X-Q4s?authuser=0&hl=en&rclk=1",
         "rating": "4.5(10)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -386,6 +728,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Soma+Restaurant/data=!4m7!3m6!1s0x17babb9b8e9c52db:0xc8186172a97f94c4!8m2!3d6.0092666!4d37.5390883!16s%2Fg%2F1thjr4sc!19sChIJ21Kcjpu7uhcRxJR_qXJhGMg?authuser=0&hl=en&rclk=1",
         "rating": "3.7(20)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -398,6 +755,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Lucy+Bar+%26+Restaurant/data=!4m7!3m6!1s0x17babb628904c5a3:0x1b4653c9003e9324!8m2!3d6.023525!4d37.5525922!16s%2Fg%2F11ddxsm9qw!19sChIJo8UEiWK7uhcRJJM-AMlTRhs?authuser=0&hl=en&rclk=1",
         "rating": "3.9(14)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -410,6 +782,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Mamush+Asa/data=!4m7!3m6!1s0x17babb0cddde12c3:0xd5b6828ecdc2b4ed!8m2!3d6.034748!4d37.553118!16s%2Fg%2F11j4v96_hk!19sChIJwxLe3Qy7uhcR7bTCzY6CttU?authuser=0&hl=en&rclk=1",
         "rating": "4.4(8)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -422,6 +809,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/One+Burger/data=!4m7!3m6!1s0x17babb0cecbb6149:0x8edb9080ed5d4587!8m2!3d6.0230842!4d37.5529737!16s%2Fg%2F11sqtrvd5t!19sChIJSWG77Ay7uhcRh0Vd7YCQ244?authuser=0&hl=en&rclk=1",
         "rating": "4.8(6)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -434,6 +836,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/JEBM+Cafe+%26+Restaurant/data=!4m7!3m6!1s0x17babb90b37382c9:0x9330a1b86c4703ba!8m2!3d6.0047642!4d37.5375825!16s%2Fg%2F11c75xt9s1!19sChIJyYJzs5C7uhcRugNHbLihMJM?authuser=0&hl=en&rclk=1",
         "rating": "3.2(9)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -454,6 +871,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Arba+Minch+Tour+And+Travel/data=!4m7!3m6!1s0x17babb381a9c71e3:0xdf85df73ac26116a!8m2!3d6.0078288!4d37.5378658!16s%2Fg%2F11h0cwm1p4!19sChIJ43GcGji7uhcRahEmrHPfhd8?authuser=0&hl=en&rclk=1",
         "rating": "4.3(16)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -466,6 +898,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Binu+Ethiopia+Tours/data=!4m7!3m6!1s0x17babb6a3af0d02f:0xa1c2ee36bc02cf2c!8m2!3d6.0079281!4d37.5369781!16s%2Fg%2F11h_wxs_00!19sChIJL9DwOmq7uhcRLM8CvDbuwqE?authuser=0&hl=en&rclk=1",
         "rating": "5.0(41)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -479,6 +926,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/ARBA+Minch+Tour+and+Travel+Association/data=!4m7!3m6!1s0x17babbbeb978e271:0xbdc71af72d35d75b!8m2!3d6.0069272!4d37.550214!16s%2Fg%2F11vzw6rq49!19sChIJceJ4ub67uhcRW9c1Lfcax70?authuser=0&hl=en&rclk=1",
         "rating": "4.9(19)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -495,6 +957,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Antu+South+Route+Ethio+Tour/data=!4m7!3m6!1s0x17babdf026fe071b:0x9229204478876cb!8m2!3d6.0340068!4d37.5587813!16s%2Fg%2F11vz8ry_74!19sChIJGwf-JvC9uhcRy3aIRwSSIgk?authuser=0&hl=en&rclk=1",
         "rating": "4.8(18)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -511,6 +988,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Haile+Ethiopia+tours/data=!4m7!3m6!1s0x17babbfcf5748d95:0xb1938cf66b0b7270!8m2!3d6.0223756!4d37.5529128!16s%2Fg%2F11glgph21k!19sChIJlY109fy7uhcRcHILa_aMk7E?authuser=0&hl=en&rclk=1",
         "rating": "4.8(29)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -526,6 +1018,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/ARBA+MINCH+TARIK+RIFT+VALLEY+TOUR/data=!4m7!3m6!1s0x17babb457c9e6ccd:0x7ea6788f313a32bb!8m2!3d6.0081457!4d37.5387828!16s%2Fg%2F11fk81hb46!19sChIJzWyefEW7uhcRuzI6MY94pn4?authuser=0&hl=en&rclk=1",
         "rating": "5.0(2)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -541,6 +1048,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/View+Ethiopia+Tour/data=!4m7!3m6!1s0x17babb580f5e2e21:0x76d52393ef4879f0!8m2!3d6.0065309!4d37.5415684!16s%2Fg%2F11gtz1fyy7!19sChIJIS5eD1i7uhcR8HlI75Mj1XY?authuser=0&hl=en&rclk=1",
         "rating": "4.8(20)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -558,6 +1080,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Driver+guide+Arbaminch/data=!4m7!3m6!1s0x17babd0d43145bc9:0x1ea81a98ab4b4600!8m2!3d6.0127611!4d37.5569166!16s%2Fg%2F11v0ms5nvf!19sChIJyVsUQw29uhcRAEZLq5gaqB4?authuser=0&hl=en&rclk=1",
         "rating": "5.0(15)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -573,6 +1110,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Omo+Valley+Adventure+Tours/data=!4m7!3m6!1s0x17babb659b60e351:0x6c52d4e61fb2551d!8m2!3d6.0053603!4d37.5462576!16s%2Fg%2F11h396d_96!19sChIJUeNgm2W7uhcRHVWyH-bUUmw?authuser=0&hl=en&rclk=1",
         "rating": "5.0(6)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -584,6 +1136,21 @@
     "sources": {
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Sol+Eco+Arbaminch+Tour/data=!4m7!3m6!1s0x17babdb631e9df07:0xf9a869705289c451!8m2!3d6.0349927!4d37.557322!16s%2Fg%2F11mywf60b_!19sChIJB9_pMba9uhcRUcSJUnBpqPk?authuser=0&hl=en&rclk=1"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -596,6 +1163,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Roots+South+Ethiopia+Tours/data=!4m7!3m6!1s0xa522cf9ef6d1989b:0x1e000e349ad63c37!8m2!3d6.0332034!4d37.5577648!16s%2Fg%2F11trcz3wrv!19sChIJm5jR9p7PIqURNzzWmjQOAB4?authuser=0&hl=en&rclk=1",
         "rating": "5.0(5)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -611,6 +1193,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Enset+Ethiopia+Tours/data=!4m7!3m6!1s0x17babb90841cfdcd:0x9dd35099a87e2269!8m2!3d6.033644!4d37.5583203!16s%2Fg%2F11lmcsgr21!19sChIJzf0chJC7uhcRaSJ-qJlQ050?authuser=0&hl=en&rclk=1",
         "rating": "5.0(1)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -626,6 +1223,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Visit+Arba+Minch+Easily+%28%E1%8A%A0%E1%88%AD%E1%89%A3%E1%88%9D%E1%8A%95%E1%8C%AD%E1%8A%95+%E1%8A%A8%E1%8A%A5%E1%8A%9B+%E1%8C%8B%E1%88%AD+%E1%89%A0%E1%89%80%E1%88%8B%E1%88%89+%E1%8B%AD%E1%8C%8E%E1%89%A5%E1%8A%99%29/data=!4m7!3m6!1s0x164b8509d9688835:0x2cfcd15c198b62e2!8m2!3d8.9892165!4d38.7927407!16s%2Fg%2F11sqpxznc0!19sChIJNYho2QmFSxYR4mKLGVzR_Cw?authuser=0&hl=en&rclk=1",
         "rating": "4.5(4)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -641,6 +1253,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Mystery+land+Ethiopia+tour/data=!4m7!3m6!1s0x17babd93fd14ad9b:0x3ffd5ec6e3649dde!8m2!3d6.033862!4d37.5577389!16s%2Fg%2F11k9f3rv91!19sChIJm60U_ZO9uhcR3p1k48Ze_T8?authuser=0&hl=en&rclk=1",
         "rating": "5.0(19)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -657,6 +1284,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Arba+Minch+Tour+and+car+Rent/data=!4m7!3m6!1s0x17babd538900826b:0xe2c93351ec81e7e9!8m2!3d6.0236616!4d37.5556683!16s%2Fg%2F11vt65y12z!19sChIJa4IAiVO9uhcR6eeB7FEzyeI?authuser=0&hl=en&rclk=1",
         "rating": "5.0(5)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -673,6 +1315,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Arba+Minch+Tourist+Car+Rental+Agency/data=!4m7!3m6!1s0x17babd5c2c52528f:0xf2fb5afc4ecb1b99!8m2!3d6.0231231!4d37.5528664!16s%2Fg%2F11t2zcm6ys!19sChIJj1JSLFy9uhcRmRvLTvxa-_I?authuser=0&hl=en&rclk=1",
         "rating": "5.0(2)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -685,6 +1342,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Antu+Tours/data=!4m7!3m6!1s0x17babb46be7066ab:0xec8b0d61ad46f860!8m2!3d6.0089377!4d37.5389218!16s%2Fg%2F11q83ry2_w!19sChIJq2Zwvka7uhcRYPhGrWENi-w?authuser=0&hl=en&rclk=1",
         "rating": "5.0(1)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -700,6 +1372,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/none+toursty+ethiopia+tours/data=!4m7!3m6!1s0x17babdb3d0f6cadf:0x7c84080e5ab45f42!8m2!3d6.0206054!4d37.5641095!16s%2Fg%2F11t9nw0lpp!19sChIJ38r20LO9uhcRQl-0Wg4IhHw?authuser=0&hl=en&rclk=1",
         "rating": "5.0(1)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -716,6 +1403,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Ethiopia+Culture+Tours/data=!4m7!3m6!1s0x17babb7a3742e12b:0xdb19d61a31a78370!8m2!3d6.0061903!4d37.5460363!16s%2Fg%2F11mvyt3r0n!19sChIJK-FCN3q7uhcRcIOnMRrWGds?authuser=0&hl=en&rclk=1",
         "rating": "5.0(2)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -731,6 +1433,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Canonis+tours+and+travel/data=!4m7!3m6!1s0x17babd0031eaaefb:0x5368f141e5ff24c3!8m2!3d6.0136156!4d37.5550517!16s%2Fg%2F11y78x7g_l!19sChIJ-67qMQC9uhcRwyT_5UHxaFM?authuser=0&hl=en&rclk=1",
         "rating": "5.0(2)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": "https://www.tripadvisor.com/Hotel_Review-g776853-d3491310-Reviews-Forty_Springs_Hotel-Arba_Minch_Southern_Nations_Nationalities_and_People_s_Region.html"
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": "https://www.trip.com/hotels/arba-minch-hotel-detail-9830387/forty-springs-hotel/"
       }
     }
   },
@@ -742,6 +1459,21 @@
     "sources": {
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Arbaminch+car+rental/data=!4m7!3m6!1s0x17babb001dfc0691:0xee919f57f49e4ea1!8m2!3d6.0112154!4d37.5389404!16s%2Fg%2F11zk1mz6_7!19sChIJkQb8HQC7uhcRoU6e9Fefke4?authuser=0&hl=en&rclk=1"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -757,6 +1489,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Tamrat+Car+Rent+and+Tour/data=!4m7!3m6!1s0x17babd08f19b6c17:0x845e538ccc08bc40!8m2!3d6.0340068!4d37.5587813!16s%2Fg%2F11x7mc4529!19sChIJF2yb8Qi9uhcRQLwIzIxTXoQ?authuser=0&hl=en&rclk=1",
         "rating": "4.8(5)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -772,6 +1519,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Car+Rental+Arbaminch+and+Tour/data=!4m7!3m6!1s0x17babdb642d5fc23:0x33127776bfe8836b!8m2!3d6.0326732!4d37.5579779!16s%2Fg%2F11vyyslyx_!19sChIJI_zVQra9uhcRa4Pov3Z3EjM?authuser=0&hl=en&rclk=1",
         "rating": "5.0(6)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -783,6 +1545,21 @@
     "sources": {
       "Google Maps": {
         "link": "https://www.google.com/maps/place/South+region+Arba+minch/data=!4m7!3m6!1s0x17babb00087cd987:0x653c8599a863c862!8m2!3d6.008814!4d37.5484193!16s%2Fg%2F11yczsfq9t!19sChIJh9l8CAC7uhcRYshjqJmFPGU?authuser=0&hl=en&rclk=1"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -794,6 +1571,21 @@
     "sources": {
       "Google Maps": {
         "link": "https://www.google.com/maps/place/Wegders+Omo+Valley+Tour+%26+Car+rent/data=!4m7!3m6!1s0x17a39bf10cf21dbb:0xafd400faa0ae7188!8m2!3d6.0127922!4d37.5566946!16s%2Fg%2F11x7mp0qm9!19sChIJux3yDPGboxcRiHGuoPoA1K8?authuser=0&hl=en&rclk=1"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -809,6 +1601,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/See+Us+Arba+Minch+Tour+Guide+Association/data=!4m7!3m6!1s0x17babb1c517cea0f:0x44e1935b3c6e3250!8m2!3d6.008813!4d37.5390698!16s%2Fg%2F11hdggwy3_!19sChIJD-p8URy7uhcRUDJuPFuT4UQ?authuser=0&hl=en&rclk=1",
         "rating": "4.0(5)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -824,6 +1631,21 @@
       "Google Maps": {
         "link": "https://www.google.com/maps/place/40+Springs/data=!4m7!3m6!1s0x17babddfa4fbf08b:0xcc0c648dfebe3a6!8m2!3d6.0040076!4d37.5557361!16s%2Fg%2F11rkf2zsf1!19sChIJi_D7pN-9uhcRpuPr30jGwAw?authuser=0&hl=en&rclk=1",
         "rating": "4.2(34)"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -837,22 +1659,23 @@
         "link": "https://www.booking.com/hotel/et/tekilu-keto.en-gb.html?aid=304142&label=gen173nr-10CAQoggJCG3NlYXJjaF9hcmJhIG1pbmNoLCBldGhpb3BpYUgzWARoR4gBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgCuNaQzQbAAgHSAiRmOWY0ZTBiZS0yOWEyLTQyMTctODE4Zi1lNWJlYzg5YWM4OGbYAgHgAgE&ucfs=1&arphpl=1&checkin=2026-03-15&checkout=2026-03-16&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=c84b54dc754100a4&srepoch=1772366653&all_sr_blocks=1536407204_425117862_2_1_0&highlighted_blocks=1536407204_425117862_2_1_0&matching_block_id=1536407204_425117862_2_1_0&sr_pri_blocks=1536407204_425117862_2_1_0__1020&from=searchresults",
         "price": "US$10",
         "address": "Arba Minch"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Google Maps": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
-  },
-  {
-    "name": "Hotels",
-    "types": [
-      "hotels"
-    ],
-    "sources": {
-      "Arba Minch Local Directory": {
-        "link": "https://arbaminchlocaldirectory.com/hotels/"
-      }
-    },
-    "categories": [
-      "Hotel"
-    ]
   },
   {
     "name": "Restaurants",
@@ -862,52 +1685,28 @@
     "sources": {
       "Arba Minch Local Directory": {
         "link": "https://arbaminchlocaldirectory.com/restaurants/"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Google Maps": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     },
     "categories": [
       "Restaurant"
-    ]
-  },
-  {
-    "name": "Lodges & Resorts",
-    "types": [
-      "resorts"
-    ],
-    "sources": {
-      "Arba Minch Local Directory": {
-        "link": "https://arbaminchlocaldirectory.com/lodges-resorts/"
-      }
-    },
-    "categories": [
-      "Lodge/Resort"
-    ]
-  },
-  {
-    "name": "Guest Houses & Pensions",
-    "types": [
-      "guest house"
-    ],
-    "sources": {
-      "Arba Minch Local Directory": {
-        "link": "https://arbaminchlocaldirectory.com/guest-houses-pensions/"
-      }
-    },
-    "categories": [
-      "Guest House/Pension"
-    ]
-  },
-  {
-    "name": "Travel Agencies & Tour Guides",
-    "types": [
-      "tour guide"
-    ],
-    "sources": {
-      "Arba Minch Local Directory": {
-        "link": "https://arbaminchlocaldirectory.com/travel-agencies-tour-guides/"
-      }
-    },
-    "categories": [
-      "Tour Guide"
     ]
   },
   {
@@ -918,6 +1717,24 @@
     "sources": {
       "Arba Minch Local Directory": {
         "link": "https://arbaminchlocaldirectory.com/auto-services/"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Google Maps": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     },
     "categories": [
@@ -932,6 +1749,24 @@
     "sources": {
       "Arba Minch Local Directory": {
         "link": "https://arbaminchlocaldirectory.com/health-medical/"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Google Maps": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     },
     "categories": [
@@ -946,6 +1781,24 @@
     "sources": {
       "ToursByLocals": {
         "link": "https://www.toursbylocals.com/tour-guides/ethiopia/addis-ababa/guide-profile/mamaru-e-664d21d996689af3433363fb"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Google Maps": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -957,6 +1810,24 @@
     "sources": {
       "ToursByLocals": {
         "link": "https://www.toursbylocals.com/tour-guides/ethiopia/arba-minch/guide-profile/alem-m-664d21ea96689af343342e1c"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Google Maps": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -968,6 +1839,24 @@
     "sources": {
       "ToursByLocals": {
         "link": "https://www.toursbylocals.com/tour-guides/ethiopia/addis-ababa/guide-profile/anwar-a-664d220d96689af34335aaf4"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Google Maps": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   },
@@ -980,6 +1869,119 @@
       "GoWithGuide": {
         "link": "https://gowithguide.com/ethiopia/tour/arba-minch-nech-sar-national-park-and-crocodile-market-9336",
         "price": "$370"
+      },
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Google Maps": {
+        "link": ""
+      },
+      "Trip.com": {
+        "link": ""
+      }
+    }
+  },
+  
+  {
+    "name": "Romi Hotel",
+    "types": [
+      "hotels",
+      "accommodation"
+    ],
+    "categories": [
+      "Hotel"
+    ],
+    "sources": {
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": "https://www.tripadvisor.com/Hotel_Review-g776853-d8407235-Reviews-Romi_Hotel-Arba_Minch_Southern_Nations_Nationalities_and_People_s_Region.html"
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Google Maps": {
+        "link": "",
+        "rating": "https://maps.app.goo.gl/hW8FTKa3tX17v3Ht5"
+      },
+      "Trip.com": {
+        "link": "https://www.trip.com/hotels/arba-minch-hotel-detail-9830355/romi-hotel/"
+      }
+    }
+  },
+  {
+    "name": "Elim Lodge",
+    "types": [
+      "lodges",
+      "accommodation"
+    ],
+    "categories": [
+      "Lodge"
+    ],
+    "sources": {
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Google Maps": {
+        "link": "",
+        "rating": ""
+      },
+      "Trip.com": {
+        "link": ""
+      }
+    }
+  },
+  {
+    "name": "Elbethel Pension",
+    "types": [
+      "guest house",
+      "pension",
+      "accommodation"
+    ],
+    "categories": [
+      "Pension"
+    ],
+    "sources": {
+      "Official Website": {
+        "link": ""
+      },
+      "TripAdvisor": {
+        "link": ""
+      },
+      "Booking.com": {
+        "link": ""
+      },
+      "Expedia": {
+        "link": ""
+      },
+      "Google Maps": {
+        "link": "",
+        "rating": ""
+      },
+      "Trip.com": {
+        "link": ""
       }
     }
   }

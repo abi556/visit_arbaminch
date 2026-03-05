@@ -6,6 +6,7 @@ import Link from "next/link"
 
 const partnerLogos = [
   { src: "/images/lg1.png", href: "https://www.ethiopianairlines.com/us" },
+  { src: "/images/trip.png", href: "https://www.tripadvisor.com/" },
   { src: "/images/lg2.png", href: "https://visitethiopia.et/" },
   { src: "/images/lg3.png", href: "https://www.nationalgeographic.com/" },
   { src: "/images/lg4.png", href: "https://www.worldwildlife.org/" },

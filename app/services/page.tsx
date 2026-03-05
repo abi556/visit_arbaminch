@@ -1,6 +1,6 @@
 'use client'
 
-import { BadgeCheck, ArrowLeft, Hotel, Compass, Utensils, Bed, Activity, Calendar, Car, Plane, Filter } from 'lucide-react'
+import { BadgeCheck, ArrowLeft, Hotel, Compass, Utensils, Bed, Activity, Calendar, Car, Plane, Filter, Globe, Map } from 'lucide-react'
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -13,7 +13,7 @@ const categoryConfig: Record<string, { label: string; icon: any }> = {
   'guest-houses': { label: "Guesthouses", icon: Bed },
   'restaurants': { label: "Dining", icon: Utensils },
   'experiences': { label: "Tours", icon: Compass },
-  'transport': { label: "Transport", icon: Car },
+  'transport': { label: "Travel Services", icon: Car },
   'health': { label: "Services", icon: Activity },
 }
 
@@ -99,9 +99,9 @@ export default function ServicesPage() {
       <section className="py-6 px-4 border-b border-ink/5 bg-paper sticky top-16 z-30 shadow-sm">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-4 md:gap-8 overflow-x-auto pb-2 no-scrollbar">
-            <div className="flex items-center gap-2 text-forest/40">
+            <div className="flex items-center gap-2 text-forest/80">
               <Filter size={16} />
-              <span className="font-mono text-[10px] uppercase tracking-widest whitespace-nowrap">Filter By</span>
+              <span className="font-mono text-ink/80 text-[10px] uppercase tracking-widest whitespace-nowrap">Filter By</span>
             </div>
             <div className="flex gap-3">
               {filterOptions.map((opt) => (
@@ -110,7 +110,7 @@ export default function ServicesPage() {
                   onClick={() => setActiveCategory(opt.id)}
                   className={`px-6 py-2 text-[10px] font-mono tracking-[0.15em] uppercase transition-all duration-300 border-2 ${activeCategory === opt.id
                     ? 'bg-forest border-forest text-paper shadow-lg shadow-forest/20'
-                    : 'border-ink/10 text-ink/40 hover:border-forest/30 hover:text-forest'
+                    : 'border-ink/30 text-ink/80 hover:border-forest/30 hover:text-forest'
                     }`}
                 >
                   {opt.label}
@@ -144,37 +144,130 @@ export default function ServicesPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {items.map((item: any, i: number) => {
                       const rating = item.sources?.["Google Maps"]?.rating || ""
-                      const link = item.sources?.["Google Maps"]?.link || "#"
                       const description = item.categories?.[0] || item.types?.[0] || "Service Provider"
+                      const sources = item.sources || {}
 
                       return (
-                        <a
+                        <div
                           key={`${item.name}-${i}`}
-                          href={link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="group p-8 bg-paper border border-ink/5 hover:border-forest/30 transition-all duration-500 hover:shadow-2xl hover:shadow-forest/5"
+                          className="group p-8 bg-paper border border-ink/5 hover:border-forest/30 transition-all duration-500 hover:shadow-2xl hover:shadow-forest/5 flex flex-col justify-between"
                         >
-                          <div className="flex justify-between items-start gap-4 mb-4">
-                            <h3 className="text-xl font-serif text-ink group-hover:text-forest transition-colors">
-                              {item.name}
-                            </h3>
-                            {rating.includes("4.") && <VerifiedBadge />}
+                          <div>
+                            <div className="flex justify-between items-start gap-4 mb-4">
+                              <h3 className="text-xl font-serif text-ink group-hover:text-forest transition-colors">
+                                {item.name}
+                              </h3>
+                              {rating.includes("4.") && <VerifiedBadge />}
+                            </div>
+
+                            <p className="text-sm text-ink/50 leading-relaxed mb-6 line-clamp-2">
+                              {description}
+                            </p>
                           </div>
 
-                          <p className="text-sm text-ink/50 leading-relaxed mb-6 line-clamp-2">
-                            {description}
-                          </p>
+                          <div className="flex flex-col gap-4 mt-auto">
+                            {/* Platform Links */}
+                            <div className="flex items-center gap-3 pt-4 border-t border-ink/5">
+                              {sources["Official Website"]?.link && (
+                                <a
+                                  href={sources["Official Website"].link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="group/link flex items-center justify-center w-8 h-8 bg-forest/5 rounded-full hover:bg-forest transition-all duration-300"
+                                  title="Official Website"
+                                >
+                                  <Globe size={14} className="text-forest group-hover/link:text-paper" />
+                                </a>
+                              )}
+                              {sources["TripAdvisor"]?.link && (
+                                <a
+                                  href={sources["TripAdvisor"].link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="group/link block relative w-6 h-6 hover:scale-110 transition-transform duration-300"
+                                  title="TripAdvisor"
+                                >
+                                  <Image
+                                    src="/images/trip.png"
+                                    alt="TripAdvisor"
+                                    fill
+                                    className="object-contain"
+                                  />
+                                </a>
+                              )}
+                              {sources["Booking.com"]?.link && (
+                                <a
+                                  href={sources["Booking.com"].link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="group/link block relative w-6 h-6 hover:scale-110 transition-transform duration-300"
+                                  title="Booking.com"
+                                >
+                                  <Image
+                                    src="/images/booking.jpeg"
+                                    alt="Booking.com"
+                                    fill
+                                    className="object-contain"
+                                  />
+                                </a>
+                              )}
+                              {sources["Expedia"]?.link && (
+                                <a
+                                  href={sources["Expedia"].link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="group/link block relative w-6 h-6 hover:scale-110 transition-transform duration-300"
+                                  title="Expedia"
+                                >
+                                  <Image
+                                    src="/images/expedia-icon-seeklogo.png"
+                                    alt="Expedia"
+                                    fill
+                                    className="object-contain"
+                                  />
+                                </a>
+                              )}
+                              {sources["Trip.com"]?.link && (
+                                <a
+                                  href={sources["Trip.com"].link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="group/link block relative w-6 h-6 hover:scale-110 transition-transform duration-300"
+                                  title="Trip.com"
+                                >
+                                  <Image
+                                    src="/images/TCOM.png"
+                                    alt="Trip.com"
+                                    fill
+                                    className="object-contain"
+                                  />
+                                </a>
+                              )}
+                              {sources["Google Maps"]?.link && (
+                                <a
+                                  href={sources["Google Maps"].link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="group/link block relative w-6 h-6 hover:scale-110 transition-transform duration-300"
+                                  title="Google Maps"
+                                >
+                                  <Image
+                                    src="/images/google-maps.png"
+                                    alt="Google Maps"
+                                    fill
+                                    className="object-contain"
+                                  />
+                                </a>
+                              )}
+                            </div>
 
-                          <div className="flex items-center justify-between pt-4 border-t border-ink/5">
-                            <span className="text-[10px] font-mono tracking-[0.2em] text-ink/30 uppercase italic">
-                              {rating ? `Rating: ${rating}` : "Featured Listing"}
-                            </span>
-                            <span className="text-[10px] font-mono tracking-[0.2em] text-forest uppercase opacity-0 group-hover:opacity-100 transition-opacity">
-                              View on Map →
-                            </span>
+                            <div className="flex items-center justify-between">
+                              <span className="text-[10px] font-mono tracking-[0.2em] text-ink/30 uppercase italic">
+                                {rating ? `Rating: ${rating}` : "Featured Listing"}
+                              </span>
+                            </div>
                           </div>
-                        </a>
+                        </div>
                       )
                     })}
                   </div>

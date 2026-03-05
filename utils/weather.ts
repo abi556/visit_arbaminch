@@ -27,10 +27,12 @@ export async function fetchArbaMinchWeather() {
 
         const temp = Math.round(data.main.temp);
         const description = data.weather[0].main;
+        const icon = data.weather[0].icon;
 
         return {
             temp,
             description,
+            icon,
             formatted: `${temp}°C ${description}`
         };
     } catch (error) {
@@ -53,10 +55,12 @@ async function fetchOpenMeteoFallback() {
         const temp = Math.round(data.current_weather.temperature);
         // Simple mapping for fallback description
         const description = 'Partly Cloudy';
+        const icon = '02d'; // Standard OpenWeatherMap code for partly cloudy
 
         return {
             temp,
             description,
+            icon,
             formatted: `${temp}°C ${description}`
         };
     } catch (e) {
@@ -64,6 +68,7 @@ async function fetchOpenMeteoFallback() {
         return {
             temp: 25,
             description: 'Partly Cloudy',
+            icon: '02d',
             formatted: '25°C Partly Cloudy'
         };
     }

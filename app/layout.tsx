@@ -41,6 +41,9 @@ export const metadata: Metadata = {
     'Dorze Village',
     'Crocodile Market',
   ],
+  icons: {
+    icon: '/images/fav.png',
+  },
   openGraph: {
     title: 'Arba Minch — Between Two Great Waters',
     description:
