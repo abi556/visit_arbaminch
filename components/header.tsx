@@ -5,6 +5,17 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X, Globe } from 'lucide-react'
 import { usePathname } from 'next/navigation'
+import { fetchArbaMinchWeather } from '@/utils/weather'
+
+function Weather() {
+  const [weather, setWeather] = useState('Loading...')
+
+  useEffect(() => {
+    fetchArbaMinchWeather().then((data) => setWeather(data.formatted))
+  }, [])
+
+  return <div className="text-base font-mono text-paper/60">{weather}</div>
+}
 
 const menuItems = [
   {
@@ -29,12 +40,12 @@ const menuItems = [
   },
 ]
 
+
 export function Header() {
   const pathname = usePathname()
   const isHomePage = pathname === '/'
   const [mobileOpen, setMobileOpen] = useState(false)
   const [expandedMobile, setExpandedMobile] = useState<string | null>(null)
-  const [weather, setWeather] = useState('25°C Partly Cloudy')
 
   // Prevent body scroll when mobile menu open
   useEffect(() => {
@@ -102,7 +113,7 @@ export function Header() {
               </div>
 
               <div className="flex items-center gap-8">
-                <div className="text-base font-mono text-paper/60">{weather}</div>
+                <Weather />
                 <button className="flex items-center gap-2 font-mono text-sm tracking-[0.15em] text-paper hover:text-paper/80 transition-colors">
                   <Globe size={16} />
                   EN
