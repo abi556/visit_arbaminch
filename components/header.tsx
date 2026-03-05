@@ -5,13 +5,15 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X, Globe } from 'lucide-react'
 import { usePathname } from 'next/navigation'
-import { fetchArbaMinchWeather } from '@/utils/weather'
 
 function Weather() {
   const [weatherData, setWeatherData] = useState<any>(null)
 
   useEffect(() => {
-    fetchArbaMinchWeather().then((data) => setWeatherData(data))
+    fetch('/api/weather')
+      .then((res) => res.json())
+      .then((data) => setWeatherData(data))
+      .catch((err) => console.error('Client weather fetch failed:', err))
   }, [])
 
   if (!weatherData) return <div className="text-base font-mono text-paper/60 tracking-wider">Loading...</div>
@@ -24,7 +26,7 @@ function Weather() {
           alt={weatherData.description}
           fill
           className="object-contain"
-          unoptimized
+          priority={false}
         />
       </div>
       <div className="text-sm font-mono text-paper font-bold tracking-[0.1em] flex items-center gap-2">

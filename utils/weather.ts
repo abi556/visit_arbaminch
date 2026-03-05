@@ -3,7 +3,7 @@
  * Falls back to Open-Meteo if OpenWeatherMap fails (e.g., new API key not yet active)
  */
 
-const OPENWEATHER_API_KEY = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY;
+const OPENWEATHER_API_KEY = process.env.OPENWEATHER_API_KEY;
 
 export async function fetchArbaMinchWeather() {
     const lat = 6.0333;
