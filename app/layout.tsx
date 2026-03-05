@@ -28,28 +28,61 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Arba Minch — Between Two Great Waters',
+  metadataBase: new URL('https://visitarbaminch.et'), // Replace with actual domain
+  title: {
+    default: 'Arba Minch — Between Two Great Waters | Official Tourism Guide',
+    template: '%s | Visit Arba Minch'
+  },
   description:
-    'Discover Arba Minch, Ethiopia’s gateway to the Rift Valley. Explore Nech Sar National Park, the Crocodile Market of Lake Chamo, Dorze weaving traditions, and the legendary 40 Springs.',
+    'The ultimate guide to Arba Minch, Ethiopia. Discover the 40 Springs, Nech Sar National Park, Lake Chamo Crocodile Market, and the rich culture of the Gamo and Dorze people.',
   keywords: [
     'Arba Minch',
-    'Ethiopia tourism',
+    'Ethiopia Tourism',
     'Rift Valley',
-    'Nech Sar',
+    'Nech Sar National Park',
     'Lake Chamo',
     'Lake Abaya',
     'Dorze Village',
-    'Crocodile Market',
+    'Gamo Highlands',
+    'Arba Minch Hotels',
+    'African Safari Ethiopia'
   ],
   icons: {
     icon: '/images/fav.png',
+    apple: '/images/fav.png',
   },
   openGraph: {
-    title: 'Arba Minch — Between Two Great Waters',
-    description:
-      'Where the Rift Valley breathes. A guide to Arba Minch, Ethiopia.',
-    type: 'website',
+    title: 'Arba Minch — Heaven of Rift Valley',
+    description: 'Explore the natural wonders and cultural heritage of Arba Minch, Ethiopia.',
+    url: 'https://visitarbaminch.et',
+    siteName: 'Visit Arba Minch',
+    images: [
+      {
+        url: '/images/cover.png',
+        width: 1200,
+        height: 630,
+        alt: 'Arba Minch Landscapes and Wildlife',
+      },
+    ],
     locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Arba Minch — Heaven of Rift Valley',
+    description: 'The ultimate guide to Arba Minch, Ethiopia.',
+    images: ['/images/cover.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 }
 
