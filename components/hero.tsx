@@ -1,8 +1,9 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import Image from "next/image"
-import { useEffect, useState } from "react"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 const partnerLogos = [
   { src: "/images/lg1.png", href: "https://www.ethiopianairlines.com/us" },
@@ -22,6 +23,7 @@ const heroImages = [
 ]
 
 export function Hero() {
+  const t = useTranslations("Hero")
   const [isVisible, setIsVisible] = useState(false)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
@@ -29,7 +31,7 @@ export function Hero() {
     const timer = setTimeout(() => setIsVisible(true), 200)
 
     const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % heroImages.length)
+      setCurrentImageIndex((prev: number) => (prev + 1) % heroImages.length)
     }, 10000) // Change background every 10 seconds
 
     return () => {
@@ -86,7 +88,7 @@ export function Hero() {
               : "translate-y-8 opacity-0"
               }`}
           >
-            Arba Minch:
+            {t("title_part1")}
           </span>
           <span
             className={`block text-4xl font-mono font-light italic md:text-6xl lg:text-7xl xl:text-8xl mt-1 ${isVisible
@@ -95,7 +97,7 @@ export function Hero() {
               }`}
             style={{ transitionDelay: "100ms" }}
           >
-            Forty Springs,
+            {t("title_part2")}
           </span>
           <span
             className={`block text-4xl font-mono font-light italic md:text-6xl lg:text-7xl xl:text-8xl ${isVisible
@@ -104,7 +106,7 @@ export function Hero() {
               }`}
             style={{ transitionDelay: "200ms" }}
           >
-            Infinite Wonder.
+            {t("title_part3")}
           </span>
         </h1>
         <p
@@ -113,7 +115,7 @@ export function Hero() {
             : "translate-y-6 opacity-0"
             }`}
         >
-          The Heaven of Rift Valley
+          {t("subtitle")}
         </p>
         <Link
           href="/attractions"
@@ -127,7 +129,7 @@ export function Hero() {
             className="absolute inset-0 bg-forest origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-[400ms] ease-out"
             aria-hidden="true"
           />
-          <span className="relative z-10">Start Exploring</span>
+          <span className="relative z-10">{t("cta")}</span>
         </Link>
       </div>
 

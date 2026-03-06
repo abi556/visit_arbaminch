@@ -4,7 +4,7 @@ import { BadgeCheck, ArrowLeft, Hotel, Compass, Utensils, Bed, Activity, Calenda
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import tourismDataRaw from "@/src/data/arbaminch_tourism_cleaned.json"
+import tourismDataRaw from "../../../src/data/arbaminch_tourism_cleaned.json"
 
 const tourismData = tourismDataRaw as any[]
 

@@ -1,0 +1,45 @@
+{
+  "Header": {
+    "explore": "Explorar",
+    "home": "Inicio",
+    "attractions": "Atracciones",
+    "history": "Historia y Cultura",
+    "plan_your_visit": "Planifique su visita",
+    "services": "Servicios",
+    "events": "Eventos",
+    "travel_requirements": "Requisitos de viaje",
+    "direct_flights": "Vols directos",
+    "stopover": "Escala",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "language": "Idioma"
+  },
+  "Hero": {
+    "title_part1": "Arba Minch:",
+    "title_part2": "Cuarenta fuentes,",
+    "title_part3": "maravilla infinita.",
+    "subtitle": "El paraíso del valle del Rift",
+    "cta": "Empezar a explorar"
+  },
+  "Footer": {
+    "tagline": "40 FUENTES / 2 PARQUES NACIONALES / 2 LAGOS / 1 DESTINO",
+    "description": "Descubra el esplendor natural y la rica herencia cultural del destino más cautivador de Etiopía.",
+    "explore": "Explorar",
+    "support": "Soporte",
+    "project": "Proyecto",
+    "project_desc": "Un escaparate digital impulsado por la comunidad, compartiendo la belleza natural y la riqueza cultural de Arba Minch con el mundo.",
+    "copyright": "Visite Arba Minch. Construido con cuidado para Etiopía."
+  },
+  "HomePage": {
+    "discover_title": "Descubra Arba Minch",
+    "attractions_title": "Atracciones",
+    "attractions_desc": "Explore parques nacionales, lagos y maravillas naturales",
+    "history_title": "Historia y Cultura",
+    "history_desc": "Aprenda sobre el pueblo Gamo y sus tradiciones",
+    "services_title": "Servicios y Estancia",
+    "services_desc": "Encuentre hoteles, guías y servicios de viaje",
+    "events_title": "Próximos Eventos",
+    "events_subtitle": "Únase a nosotros para tradiciones, festivales y cultura",
+    "view_calendar": "Ver Calendario"
+  }
+}

@@ -1,12 +1,13 @@
-'use client'
+"use client"
 
 import { useState, useEffect } from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X, Globe } from 'lucide-react'
-import { usePathname } from 'next/navigation'
+import { Menu, X, Globe, ChevronDown } from 'lucide-react'
+import { useTranslations, useLocale } from 'next-intl'
+import { Link, usePathname, useRouter, locales } from '@/navigation'
 
 function Weather() {
+  const t = useTranslations('Hero')
   const [weatherData, setWeatherData] = useState<any>(null)
 
   useEffect(() => {
@@ -39,35 +40,47 @@ function Weather() {
   )
 }
 
-const menuItems = [
-  {
-    label: 'Explore',
-    href: '#',
-    submenu: [
-      { label: 'Home', href: '/' },
-      { label: 'Attractions', href: '/attractions' },
-      { label: 'History & Culture', href: '/history' },
-    ],
-  },
-  {
-    label: 'Plan Your Visit',
-    href: '#',
-    submenu: [
-      { label: 'Services', href: '/services' },
-      { label: 'Events', href: '/events' },
-      { label: 'Travel Requirements', href: '/travel-requirements' },
-      { label: 'Direct Flights', href: '/direct-flights' },
-      { label: 'Stopover', href: '/stopover' },
-    ],
-  },
-]
-
-
 export function Header() {
+  const t = useTranslations('Header')
+  const locale = useLocale()
   const pathname = usePathname()
+  const router = useRouter()
+
   const isHomePage = pathname === '/'
   const [mobileOpen, setMobileOpen] = useState(false)
-  const [expandedMobile, setExpandedMobile] = useState<string | null>(null)
+  const [langOpen, setLangOpen] = useState(false)
+
+  const menuItems = [
+    {
+      label: t('explore'),
+      href: '#',
+      submenu: [
+        { label: t('home'), href: '/' },
+        { label: t('attractions'), href: '/attractions' },
+        { label: t('history'), href: '/history' },
+      ],
+    },
+    {
+      label: t('plan_your_visit'),
+      href: '#',
+      submenu: [
+        { label: t('services'), href: '/services' },
+        { label: t('events'), href: '/events' },
+        { label: t('travel_requirements'), href: '/travel-requirements' },
+        { label: t('direct_flights'), href: '/direct-flights' },
+        { label: t('stopover'), href: '/stopover' },
+      ],
+    },
+  ]
+
+  const languageNames: Record<string, string> = {
+    en: 'English',
+    am: 'አማርኛ',
+    ar: 'العربية',
+    es: 'Español',
+    fr: 'Français',
+    zh: '中文'
+  }
 
   // Prevent body scroll when mobile menu open
   useEffect(() => {
@@ -77,6 +90,11 @@ export function Header() {
       document.body.style.overflow = 'auto'
     }
   }, [mobileOpen])
+
+  const switchLanguage = (newLocale: string) => {
+    router.replace(pathname, { locale: newLocale });
+    setLangOpen(false);
+  };
 
   return (
     <header className={`${isHomePage ? 'absolute' : 'sticky top-0'} left-0 right-0 z-50`}>
@@ -127,19 +145,42 @@ export function Header() {
             <div className="hidden lg:flex items-center gap-10">
               <div className="flex items-center gap-6 border-r border-paper/10 pr-10">
                 <Link href="/blog" className="font-mono text-sm tracking-[0.15em] text-paper hover:text-paper/80 transition-colors uppercase">
-                  Blog
+                  {t('blog')}
                 </Link>
                 <Link href="/contact" className="font-mono text-sm tracking-[0.15em] text-paper hover:text-paper/80 transition-colors uppercase">
-                  Contact
+                  {t('contact')}
                 </Link>
               </div>
 
               <div className="flex items-center gap-8">
                 <Weather />
-                <button className="flex items-center gap-2 font-mono text-sm tracking-[0.15em] text-paper hover:text-paper/80 transition-colors">
-                  <Globe size={16} />
-                  EN
-                </button>
+
+                {/* Language Switcher */}
+                <div className="relative">
+                  <button
+                    onClick={() => setLangOpen(!langOpen)}
+                    className="flex items-center gap-2 font-mono text-sm tracking-[0.15em] text-paper hover:text-paper/80 transition-colors uppercase"
+                  >
+                    <Globe size={16} />
+                    <span>{locale.toUpperCase()}</span>
+                    <ChevronDown size={12} className={`transition-transform duration-200 ${langOpen ? 'rotate-180' : ''}`} />
+                  </button>
+
+                  {langOpen && (
+                    <div className="absolute right-0 mt-4 w-40 bg-ink/95 backdrop-blur-xl border border-paper/10 rounded-sm shadow-2xl py-2 z-50">
+                      {locales.map((loc) => (
+                        <button
+                          key={loc}
+                          onClick={() => switchLanguage(loc)}
+                          className={`w-full text-left px-4 py-2 text-xs uppercase tracking-widest transition-colors ${locale === loc ? 'text-forest font-bold bg-paper/5' : 'text-paper/70 hover:bg-paper/10 hover:text-paper'
+                            }`}
+                        >
+                          {languageNames[loc]}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
 
@@ -223,23 +264,43 @@ export function Header() {
                   className="px-4 py-4 bg-paper/5 border border-paper/5 rounded-sm text-center font-mono text-[10px] uppercase tracking-widest text-paper/70 hover:bg-paper/10 hover:border-paper/20 transition-all"
                   onClick={() => setMobileOpen(false)}
                 >
-                  Blog
+                  {t('blog')}
                 </Link>
                 <Link
                   href="/contact"
                   className="px-4 py-4 bg-paper/5 border border-paper/5 rounded-sm text-center font-mono text-[10px] uppercase tracking-widest text-paper/70 hover:bg-paper/10 hover:border-paper/20 transition-all"
                   onClick={() => setMobileOpen(false)}
                 >
-                  Contact
+                  {t('contact')}
                 </Link>
               </div>
 
               <div className="pt-4 flex flex-col items-center gap-6">
                 <Weather />
-                <button className="flex items-center gap-3 px-8 py-3 bg-forest text-paper rounded-full font-mono text-[10px] uppercase tracking-widest hover:bg-forest/90 transition-all">
-                  <Globe size={14} className="animate-pulse" />
-                  <span>Language: EN</span>
-                </button>
+
+                {/* Mobile Language Switcher */}
+                <div className="w-full space-y-4">
+                  <div className="flex items-center gap-4">
+                    <div className="h-[1px] w-4 bg-forest/40" />
+                    <h3 className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/40">
+                      {t('language')}
+                    </h3>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2">
+                    {locales.map((loc) => (
+                      <button
+                        key={loc}
+                        onClick={() => switchLanguage(loc)}
+                        className={`px-4 py-3 rounded-sm font-mono text-[10px] uppercase tracking-widest transition-all ${locale === loc
+                          ? 'bg-forest text-paper border border-forest'
+                          : 'bg-paper/5 text-paper/60 border border-paper/10 hover:bg-paper/10'
+                          }`}
+                      >
+                        {languageNames[loc]}
+                      </button>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>

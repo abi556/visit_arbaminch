@@ -1,0 +1,45 @@
+{
+  "Header": {
+    "explore": "ይመርምሩ",
+    "home": "መነሻ",
+    "attractions": "መስህቦች",
+    "history": "ታሪክ እና ባህል",
+    "plan_your_visit": "ጉዞዎን ያቅዱ",
+    "services": "አገልግሎቶች",
+    "events": "ክስተቶች",
+    "travel_requirements": "የጉዞ መስፈርቶች",
+    "direct_flights": "ቀጥታ በረራዎች",
+    "stopover": "እረፍት",
+    "blog": "ብሎግ",
+    "contact": "ያግኙን",
+    "language": "ቋንቋ"
+  },
+  "Hero": {
+    "title_part1": "አርባ ምንጭ፡",
+    "title_part2": "አርባ ምንጮች፣",
+    "title_part3": "ማለቂያ የሌለው ድንቅ።",
+    "subtitle": "የሪፍት ቫሊ ገነት",
+    "cta": "ጉብኝት ይጀምሩ"
+  },
+  "Footer": {
+    "tagline": "40 ምንጮች / 2 ብሔራዊ ፓርኮች / 2 ሐይቆች / 1 መዳረሻ",
+    "description": "የኢትዮጵያን እጅግ ማራኪ መዳረሻ ተፈጥሯዊ ድምቀት እና የበለፀገ ባህላዊ ቅርስ ያግኙ።",
+    "explore": "ይመርምሩ",
+    "support": "ድጋፍ",
+    "project": "ፕሮጀክት",
+    "project_desc": "የአርባ ምንጭን ተፈጥሯዊ ውበት እና ባህላዊ ብልጽግና ለአለም የሚያጋራ በማህበረሰብ የሚመራ ዲጂታል ማሳያ።",
+    "copyright": "አርባ ምንጭን ይጎብኙ። ለኢትዮጵያ በጥንቃቄ ተገንብቷል።"
+  },
+  "HomePage": {
+    "discover_title": "አርባ ምንጭን ይጎብኙ",
+    "attractions_title": "መስህቦች",
+    "attractions_desc": "ብሔራዊ ፓርኮችን፣ ሐይቆችን እና የተፈጥሮ ድንቆችን ይጎብኙ",
+    "history_title": "ታሪክ እና ባህል",
+    "history_desc": "ስለ ጋሞ ህዝብ እና ወጎች ይማሩ",
+    "services_title": "አገልግሎቶች እና ቆይታ",
+    "services_desc": "ሆቴሎችን፣ አስጎብኚዎችን እና የጉዞ አገልግሎቶችን ያግኙ",
+    "events_title": "የሚመጡ ክስተቶች",
+    "events_subtitle": "ለወጎች፣ ለበዓላት እና ለባህል ይቀላቀሉን",
+    "view_calendar": "ክስተቶችን ይመልከቱ"
+  }
+}

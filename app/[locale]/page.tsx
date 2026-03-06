@@ -1,8 +1,13 @@
 import { Hero } from "@/components/hero"
 import { ImageSlider } from "@/components/image-slider"
-import Link from 'next/link'
+import { getTranslations, setRequestLocale } from "next-intl/server"
+import { Link } from "@/navigation"
 
-export default function HomePage() {
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  setRequestLocale(locale)
+  const t = await getTranslations("HomePage")
+
   return (
     <>
       <Hero />
@@ -11,7 +16,7 @@ export default function HomePage() {
       <section className="py-16 md:py-24 px-4 bg-paper">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif text-ink mb-12 text-center">
-            Discover Arba Minch
+            {t("discover_title")}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -21,10 +26,10 @@ export default function HomePage() {
                 <ImageSlider prefix="attr" count={6} />
               </div>
               <h3 className="text-xl font-serif text-ink group-hover:text-clay transition-colors">
-                Attractions
+                {t("attractions_title")}
               </h3>
               <p className="text-sm text-muted-foreground mt-2">
-                Explore national parks, lakes, and natural wonders
+                {t("attractions_desc")}
               </p>
             </Link>
 
@@ -34,10 +39,10 @@ export default function HomePage() {
                 <ImageSlider prefix="his" count={6} />
               </div>
               <h3 className="text-xl font-serif text-ink group-hover:text-clay transition-colors">
-                History & Culture
+                {t("history_title")}
               </h3>
               <p className="text-sm text-muted-foreground mt-2">
-                Learn about the Gamo people and traditions
+                {t("history_desc")}
               </p>
             </Link>
 
@@ -47,10 +52,10 @@ export default function HomePage() {
                 <ImageSlider prefix="serv" count={6} />
               </div>
               <h3 className="text-xl font-serif text-ink group-hover:text-clay transition-colors">
-                Services & Stay
+                {t("services_title")}
               </h3>
               <p className="text-sm text-muted-foreground mt-2">
-                Find hotels, guides, and travel services
+                {t("services_desc")}
               </p>
             </Link>
           </div>
@@ -64,10 +69,10 @@ export default function HomePage() {
           {/* Left: Text */}
           <div className="w-full md:w-1/5 z-20 text-center md:text-left mb-12 md:mb-0">
             <h2 className="text-4xl md:text-5xl font-serif text-paper mb-4 leading-tight">
-              Upcoming <br className="hidden md:block" /> Events
+              {t("events_title")}
             </h2>
             <p className="text-paper/60 font-mono text-[10px] tracking-[0.3em] uppercase">
-              Join us for traditions, <br className="hidden md:block" /> festivals, and culture
+              {t("events_subtitle")}
             </p>
           </div>
 
@@ -98,7 +103,7 @@ export default function HomePage() {
           {/* Right: Button */}
           <div className="w-full md:w-1/5 z-20 flex justify-center md:justify-end">
             <Link href="/events" className="group flex items-center gap-4 px-6 py-4 border border-paper/30 text-paper hover:border-paper transition-all font-mono text-[10px] tracking-[0.3em] uppercase whitespace-nowrap">
-              <span>View Calendar</span>
+              <span>{t("view_calendar")}</span>
               <div className="w-8 h-[1px] bg-paper transform transition-transform group-hover:scale-x-150 origin-right" />
             </Link>
           </div>

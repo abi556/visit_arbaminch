@@ -1,0 +1,45 @@
+{
+  "Header": {
+    "explore": "Explore",
+    "home": "Home",
+    "attractions": "Attractions",
+    "history": "History & Culture",
+    "plan_your_visit": "Plan Your Visit",
+    "services": "Services",
+    "events": "Events",
+    "travel_requirements": "Travel Requirements",
+    "direct_flights": "Direct Flights",
+    "stopover": "Stopover",
+    "blog": "Blog",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "Hero": {
+    "title_part1": "Arba Minch:",
+    "title_part2": "Forty Springs,",
+    "title_part3": "Infinite Wonder.",
+    "subtitle": "The Heaven of Rift Valley",
+    "cta": "Start Exploring"
+  },
+  "Footer": {
+    "tagline": "40 SPRINGS / 2 NATIONAL PARKS / 2 LAKES / 1 DESTINATION",
+    "description": "Discover the natural splendor and rich cultural heritage of Ethiopia's most captivating destination.",
+    "explore": "Explore",
+    "support": "Support",
+    "project": "Project",
+    "project_desc": "A community-driven digital showcase, sharing the natural beauty and cultural richness of Arba Minch with the world.",
+    "copyright": "Visit Arba Minch. Built with care for Ethiopia."
+  },
+  "HomePage": {
+    "discover_title": "Discover Arba Minch",
+    "attractions_title": "Attractions",
+    "attractions_desc": "Explore national parks, lakes, and natural wonders",
+    "history_title": "History & Culture",
+    "history_desc": "Learn about the Gamo people and traditions",
+    "services_title": "Services & Stay",
+    "services_desc": "Find hotels, guides, and travel services",
+    "events_title": "Upcoming Events",
+    "events_subtitle": "Join us for traditions, festivals, and culture",
+    "view_calendar": "View Calendar"
+  }
+}

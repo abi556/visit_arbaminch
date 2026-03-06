@@ -2,9 +2,14 @@ import React from "react"
 import type { Metadata, Viewport } from 'next'
 import { Cormorant_Garamond, Space_Mono, Inter } from 'next/font/google'
 
-import './globals.css'
+import '../globals.css'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
+
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, setRequestLocale } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import { locales } from '@/navigation';
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -90,19 +95,35 @@ export const viewport: Viewport = {
   themeColor: '#FAF9F6',
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+  params
+}: {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale)
+
+  // Ensure that the incoming `locale` is valid
+  if (!locales.includes(locale as any)) {
+    notFound();
+  }
+
+  // Providing all messages to the client
+  // side is the easiest way to get started
+  const messages = await getMessages();
+
   return (
-    <html lang="en" className={`${cormorant.variable} ${spaceMono.variable} ${inter.variable}`} suppressHydrationWarning>
+    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className={`${cormorant.variable} ${spaceMono.variable} ${inter.variable}`} suppressHydrationWarning>
       <body className="font-sans antialiased flex flex-col min-h-screen" suppressHydrationWarning>
-        <Header />
-        <main className="flex-1">
-          {children}
-        </main>
-        <Footer />
+        <NextIntlClientProvider messages={messages}>
+          <Header />
+          <main className="flex-1">
+            {children}
+          </main>
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   )

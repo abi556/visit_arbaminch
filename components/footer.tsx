@@ -1,26 +1,40 @@
-import Link from "next/link";
+import { Link } from "@/navigation";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export function Footer() {
+  const t = useTranslations("Footer");
+
   return (
     <footer className="border-t border-foreground/10 bg-foreground text-paper">
       <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <div className="flex flex-col gap-16 lg:flex-row lg:justify-between">
           <div className="max-w-sm">
-            <h3 className="font-serif text-2xl font-normal italic">
-              Arba Minch
-            </h3>
+            <div className="flex items-center gap-2">
+              <div className="relative w-9 h-9">
+                <Image
+                  src="/images/fav.png"
+                  alt="Arba Minch Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <h3 className="font-serif text-2xl font-normal italic">
+                Visit Arba Minch
+              </h3>
+            </div>
             <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.25em] opacity-40">
-              40 SPRINGS / 2 LAKES / 1 DESTINATION
+              {t("tagline")}
             </p>
             <p className="mt-6 text-sm font-light leading-relaxed opacity-60">
-              Discover the natural splendor and rich cultural heritage of Ethiopia's most captivating destination.
+              {t("description")}
             </p>
           </div>
 
-          <div className="flex gap-16">
+          <div className="grid grid-cols-2 gap-x-12 gap-y-16 lg:flex lg:gap-16">
             <div>
               <h4 className="font-mono text-[10px] uppercase tracking-[0.25em] opacity-40">
-                Explore
+                {t("explore")}
               </h4>
               <ul className="mt-5 flex flex-col gap-3">
                 {[
@@ -43,7 +57,7 @@ export function Footer() {
 
             <div>
               <h4 className="font-mono text-[10px] uppercase tracking-[0.25em] opacity-40">
-                Support
+                {t("support")}
               </h4>
               <ul className="mt-5 flex flex-col gap-3">
                 {[
@@ -62,13 +76,12 @@ export function Footer() {
                 ))}
               </ul>
             </div>
-            <div>
+            <div className="col-span-2 lg:col-span-1">
               <h4 className="font-mono text-[10px] uppercase tracking-[0.25em] opacity-40">
-                Project
+                {t("project")}
               </h4>
               <p className="mt-5 max-w-xs text-sm font-light leading-relaxed opacity-60">
-                A community-driven digital showcase, sharing the natural beauty
-                and cultural richness of Arba Minch with the world.
+                {t("project_desc")}
               </p>
             </div>
           </div>
@@ -77,8 +90,7 @@ export function Footer() {
         <div className="mt-16 border-t border-paper/10 pt-8">
           <p className="font-mono text-[10px] uppercase tracking-[0.2em] opacity-30">
             {"© "}
-            {new Date().getFullYear()} Visit Arba Minch. Built with care for
-            Ethiopia.
+            {new Date().getFullYear()} {t("copyright")}
           </p>
         </div>
       </div>

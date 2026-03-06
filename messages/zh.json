@@ -1,0 +1,45 @@
+{
+  "Header": {
+    "explore": "探索",
+    "home": "首页",
+    "attractions": "景点",
+    "history": "历史与文化",
+    "plan_your_visit": "计划您的行程",
+    "services": "服务",
+    "events": "活动",
+    "travel_requirements": "旅行要求",
+    "direct_flights": "直飞航班",
+    "stopover": "经停",
+    "blog": "博客",
+    "contact": "联系我们",
+    "language": "语言"
+  },
+  "Hero": {
+    "title_part1": "阿尔巴门奇：",
+    "title_part2": "四十泉，",
+    "title_part3": "无尽奇迹。",
+    "subtitle": "东非大裂谷的天堂",
+    "cta": "开始探索"
+  },
+  "Footer": {
+    "tagline": "40 个泉水 / 2 个国家公园 / 2 个湖泊 / 1 个目的地",
+    "description": "探索埃塞俄比亚最迷人目的地的自然光彩和丰富的文化遗产。",
+    "explore": "探索",
+    "support": "支持",
+    "project": "项目",
+    "project_desc": "一个由社区驱动的数字展示，向世界分享阿尔巴门奇的自然美景和文化底蕴。",
+    "copyright": "访问阿尔巴门奇。为埃塞俄比亚精心打造。"
+  },
+  "HomePage": {
+    "discover_title": "探索阿尔巴门奇",
+    "attractions_title": "景点",
+    "attractions_desc": "探索国家公园、湖泊和自然奇观",
+    "history_title": "历史与文化",
+    "history_desc": "了解加莫人及其传统",
+    "services_title": "服务与住宿",
+    "services_desc": "寻找酒店、导游和旅游服务",
+    "events_title": "即将举行的活动",
+    "events_subtitle": "加入我们的传统、节日和文化活动",
+    "view_calendar": "查看日历"
+  }
+}
