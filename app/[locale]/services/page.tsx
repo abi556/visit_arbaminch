@@ -1,7 +1,7 @@
 'use client'
 
 import { BadgeCheck, ArrowLeft, Hotel, Compass, Utensils, Bed, Activity, Calendar, Car, Plane, Filter, Globe, Map } from 'lucide-react'
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import tourismDataRaw from "../../../src/data/arbaminch_tourism_cleaned.json"
@@ -35,7 +35,7 @@ function VerifiedBadge() {
 export default function ServicesPage() {
   const [activeCategory, setActiveCategory] = useState<string>('all')
 
-  const groupedData = {
+  const groupedData = useMemo(() => ({
     'hotel-resorts': tourismData.filter(item =>
       item.types.some((t: string) => ['hotels', 'lodges', 'resorts'].includes(t))
     ),
@@ -55,11 +55,11 @@ export default function ServicesPage() {
     'health': tourismData.filter(item =>
       item.types.some((t: string) => ['health'].includes(t))
     )
-  }
+  }), [])
 
-  const activeCategories = Object.keys(groupedData).filter(
+  const activeCategories = useMemo(() => Object.keys(groupedData).filter(
     cat => (activeCategory === 'all' || activeCategory === cat) && (groupedData as any)[cat].length > 0
-  )
+  ), [activeCategory, groupedData])
 
   const filterOptions = [
     { id: 'all', label: 'All Services' },
@@ -96,7 +96,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Filter Bar */}
-      <section className="py-6 px-4 border-b border-ink/5 bg-paper sticky top-16 z-30 shadow-sm">
+      <section className="py-6 px-4 border-b border-ink/5 bg-paper sticky top-[72px] z-30 shadow-sm">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-4 md:gap-8 overflow-x-auto pb-2 no-scrollbar">
             <div className="flex items-center gap-2 text-forest/80">
@@ -191,6 +191,7 @@ export default function ServicesPage() {
                                     src="/images/trip.png"
                                     alt="TripAdvisor"
                                     fill
+                                    sizes="24px"
                                     className="object-contain"
                                   />
                                 </a>
@@ -207,6 +208,7 @@ export default function ServicesPage() {
                                     src="/images/booking.jpeg"
                                     alt="Booking.com"
                                     fill
+                                    sizes="24px"
                                     className="object-contain"
                                   />
                                 </a>
@@ -223,6 +225,7 @@ export default function ServicesPage() {
                                     src="/images/expedia-icon-seeklogo.png"
                                     alt="Expedia"
                                     fill
+                                    sizes="24px"
                                     className="object-contain"
                                   />
                                 </a>
@@ -239,6 +242,7 @@ export default function ServicesPage() {
                                     src="/images/TCOM.png"
                                     alt="Trip.com"
                                     fill
+                                    sizes="24px"
                                     className="object-contain"
                                   />
                                 </a>
@@ -255,6 +259,7 @@ export default function ServicesPage() {
                                     src="/images/google-maps.png"
                                     alt="Google Maps"
                                     fill
+                                    sizes="24px"
                                     className="object-contain"
                                   />
                                 </a>

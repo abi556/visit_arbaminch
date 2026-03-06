@@ -158,6 +158,7 @@ export function Hero() {
                     src={partner.src}
                     alt="Partner Logo"
                     fill
+                    sizes="(max-width: 768px) 150px, 160px"
                     className="object-contain"
                   />
                 </a>

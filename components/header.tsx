@@ -17,7 +17,7 @@ function Weather() {
       .catch((err) => console.error('Client weather fetch failed:', err))
   }, [])
 
-  if (!weatherData) return <div className="text-base font-mono text-paper/60 tracking-wider">Loading...</div>
+  if (!weatherData) return <div className="h-11 flex items-center text-base font-mono text-paper/60 tracking-wider">Loading...</div>
 
   return (
     <div className="flex items-center gap-3 bg-paper/5 px-4 py-1.5 rounded-full border border-paper/10">
@@ -87,7 +87,13 @@ export function Header() {
     if (mobileOpen) {
       document.body.style.overflow = 'hidden'
     } else {
-      document.body.style.overflow = 'auto'
+      // Only restore if it was previously hidden to avoid unnecessary reflow on mount
+      if (document.body.style.overflow === 'hidden') {
+        document.body.style.overflow = ''
+      }
+    }
+    return () => {
+      document.body.style.overflow = ''
     }
   }, [mobileOpen])
 
@@ -112,7 +118,8 @@ export function Header() {
                   alt="Arba Minch Logo"
                   width={150}
                   height={40}
-                  className="h-10 w-auto object-contain"
+                  style={{ width: 'auto', height: '40px' }}
+                  className="object-contain"
                   priority
                 />
               </Link>
