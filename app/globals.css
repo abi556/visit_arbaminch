@@ -37,6 +37,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-paper text-ink;
     font-weight: 300;
@@ -52,6 +53,6 @@ html {
 
 /* Selection color */
 ::selection {
-  background-color: #8C462E;
+  background-color: #3D4C3E;
   color: #FAF9F6;
 }
