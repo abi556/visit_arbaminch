@@ -2,28 +2,28 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { MapPin, Clock, Zap } from 'lucide-react'
+import { MapPin, Clock, Zap, Plane } from 'lucide-react'
 
 export default function StopoverPage() {
   const stopovers = [
     {
       city: 'Addis Ababa',
       duration: '1-3 days',
-      icon: <MapPin className="w-6 h-6" />,
+      icon: Plane,
       description: 'Explore Ethiopia\'s capital, ancient history, and vibrant culture before heading south to Arba Minch.',
       highlights: ['National Museum', 'Holy Trinity Cathedral', 'Entoto Mountain', 'Lucy Museum'],
     },
     {
       city: 'Hawassa',
       duration: 'Half-day or overnight',
-      icon: <MapPin className="w-6 h-6" />,
+      icon: Plane,
       description: 'Visit the scenic Lake Hawassa en route to Arba Minch. Perfect for a quick cultural stop.',
       highlights: ['Lake Hawassa Market', 'Sidamo Coffee Region', 'Local crafts'],
     },
     {
       city: 'Lalibela',
       duration: '2-3 days',
-      icon: <MapPin className="w-6 h-6" />,
+      icon: Plane,
       description: 'UNESCO World Heritage rock-hewn churches. A spiritual journey through ancient Ethiopia.',
       highlights: ['Rock Churches', 'St. George Church', 'Jordan River', 'Pilgrim routes'],
     },

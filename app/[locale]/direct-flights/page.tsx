@@ -2,19 +2,19 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Plane } from 'lucide-react'
 
 export default function DirectFlightsPage() {
   const airlines = [
     {
       name: 'Ethiopian Airlines',
-      logo: '✈️',
+      icon: Plane,
       routes: ['Addis Ababa to Arba Minch (2.5 hours)', 'Multiple daily departures'],
       features: ['Direct service', 'Competitive pricing', 'Flexible booking'],
     },
     {
       name: 'Kenya Airways',
-      logo: '✈️',
+      icon: Plane,
       routes: ['Nairobi to Arba Minch (3 hours)', 'Daily flights with connection'],
       features: ['Quality service', 'Regional hub', 'Alliance benefits'],
     },
@@ -66,7 +66,9 @@ export default function DirectFlightsPage() {
                       ))}
                     </div>
                   </div>
-                  <span className="text-4xl">{airline.logo}</span>
+                  <div className="text-4xl text-forest bg-forest/5 p-4 rounded-full border border-forest/10 shadow-inner">
+                    <airline.icon size={32} strokeWidth={1} />
+                  </div>
                 </div>
 
                 <div className="flex flex-wrap gap-2 mb-6">

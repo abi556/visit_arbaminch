@@ -1,4 +1,8 @@
 'use client'
+import { useState } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { Filter } from 'lucide-react'
 
 import { Compass, Camera, ShieldCheck, Map, Sun, Info } from 'lucide-react'
 
@@ -40,7 +44,7 @@ export default function TravelGuidePage() {
                 <div className="max-w-7xl mx-auto">
                     <div className="aspect-[21/9] w-full relative overflow-hidden rounded-sm shadow-2xl">
                         <img
-                            src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=2000&h=800&fit=crop"
+                            src="/images/hero3.jpg"
                             alt="Arba Minch Landscape"
                             className="w-full h-full object-cover"
                         />
@@ -68,7 +72,7 @@ export default function TravelGuidePage() {
                     <div className="mt-32 grid md:grid-cols-2 gap-16 items-center">
                         <div className="aspect-[4/5] rounded-sm overflow-hidden border-[10px] border-muted/20">
                             <img
-                                src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=1000&fit=crop"
+                                src="/images/tour.jpg"
                                 alt="Exploration"
                                 className="w-full h-full object-cover"
                             />
