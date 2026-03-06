@@ -33,7 +33,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://visitarbaminch.et'), // Replace with actual domain
+  metadataBase: new URL('https://visit-arbaminch.vercel.app'),
   title: {
     default: 'Arba Minch — Heaven of Rift Valley | Official Tourism Guide',
     template: '%s | Visit Arba Minch'
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Arba Minch — Heaven of Rift Valley',
     description: 'Explore the natural wonders and cultural heritage of Arba Minch, Ethiopia.',
-    url: 'https://visitarbaminch.et',
+    url: 'https://visit-arbaminch.vercel.app',
     siteName: 'Visit Arba Minch',
     images: [
       {
